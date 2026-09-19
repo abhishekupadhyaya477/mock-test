@@ -7,10 +7,10 @@ import {
 } from 'lucide-react';
 import { 
   getExamCategories, createExamCategory, createMockTest, 
-  createQuestions, getMockTests, togglePublished, deleteMockTest 
+  createQuestions, getMockTests, togglePublished, deleteMockTest,
+  upsertExamCategory, reassignMockCategory
 } from '../../data/loader';
 import type { ExamCategory, MockTest, Question } from '../../types/mock';
-import mocksData from '../../data/mocks.json';
 
 type Tab = 'create' | 'questions' | 'tools';
 
@@ -486,120 +486,375 @@ const QuestionsTab: React.FC<{ showMessage: (m: string, t: 'success' | 'error') 
 };
 
 const ToolsTab: React.FC<{ showMessage: (m: string, t: 'success' | 'error') => void }> = ({ showMessage }) => {
+  const [mocks, setMocks] = useState<MockTest[]>([]);
+  const [categories, setCategories] = useState<ExamCategory[]>([]);
+
+  // Import state
+  const [jsonText, setJsonText] = useState('');
   const [importing, setImporting] = useState(false);
   const [progress, setProgress] = useState('');
-  const [mocks, setMocks] = useState<MockTest[]>([]);
+  const [isDragging, setIsDragging] = useState(false);
+
+  // Fallback category selector
+  const [fbGroup, setFbGroup] = useState('');
+  const [fbSub, setFbSub] = useState('');
+  const [newGroup, setNewGroup] = useState('');
+  const [newSub, setNewSub] = useState('');
+  const [showNewGroup, setShowNewGroup] = useState(false);
+  const [showNewSub, setShowNewSub] = useState(false);
+
+  // Migration state
+  const [migrateMockId, setMigrateMockId] = useState('');
+  const [migrateGroup, setMigrateGroup] = useState('');
+  const [migrateSub, setMigrateSub] = useState('');
+  const [migrating, setMigrating] = useState(false);
 
   useEffect(() => {
-    loadMocks();
+    loadData();
   }, []);
 
-  const loadMocks = async () => {
+  const loadData = async () => {
     try {
-      const data = await getMockTests();
-      setMocks(data);
+      const [m, c] = await Promise.all([getMockTests(), getExamCategories()]);
+      setMocks(m);
+      setCategories(c);
     } catch (e) {
       console.error(e);
     }
   };
 
+  const groups = useMemo(() => Array.from(new Set(categories.map(c => c.exam_group))), [categories]);
+  const subsForGroup = (g: string) => categories.filter(c => c.exam_group === g).map(c => c.sub_category);
+
+  // Imported / unassigned mocks
+  const importedMocks = useMemo(
+    () => mocks.filter(m => m.category?.exam_group === 'Imported' || !m.category),
+    [mocks]
+  );
+
+  // ─── File handling ──────────────────────────────────────────
+  const readFile = (file: File) => {
+    if (!file.name.endsWith('.json')) {
+      showMessage('Please upload a .json file', 'error');
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = (e) => setJsonText(e.target?.result as string ?? '');
+    reader.readAsText(file);
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    setIsDragging(false);
+    const file = e.dataTransfer.files[0];
+    if (file) readFile(file);
+  };
+
+  const handleFileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) readFile(file);
+  };
+
+  // ─── Import logic ───────────────────────────────────────────
   const handleImport = async () => {
-    if (!window.confirm('This will import mocks from mocks.json. Continue?')) return;
-    
+    let parsed: any[];
+    try {
+      parsed = JSON.parse(jsonText);
+      if (!Array.isArray(parsed)) parsed = [parsed];
+    } catch {
+      showMessage('Invalid JSON. Please check the format.', 'error');
+      return;
+    }
+
+    // Resolve fallback category
+    const fallbackGroup = showNewGroup ? newGroup.trim() : fbGroup;
+    const fallbackSub = showNewSub ? newSub.trim() : fbSub;
+
+    if (!fallbackGroup && parsed.some((m: any) => !m.examGroup)) {
+      showMessage('Select a fallback Exam Group or ensure every mock in JSON has "examGroup".', 'error');
+      return;
+    }
+
     setImporting(true);
     let importedCount = 0;
     let questionsCount = 0;
 
     try {
-      // Find or create "Imported" category
-      const cats = await getExamCategories();
-      let importCat = cats.find(c => c.exam_group === 'Imported' && c.sub_category === 'Auto Import');
-      if (!importCat) {
-        importCat = await createExamCategory('Imported', 'Auto Import');
-      }
+      for (let i = 0; i < parsed.length; i++) {
+        const mockData = parsed[i];
+        setProgress(`Importing mock ${i + 1} of ${parsed.length}...`);
 
-      for (let i = 0; i < mocksData.length; i++) {
-        const mockData = mocksData[i];
-        setProgress(`Importing mock ${i + 1} of ${mocksData.length}...`);
-        
+        // Resolve category: JSON-level > fallback
+        const group = (mockData.examGroup || fallbackGroup || '').trim();
+        const sub = (mockData.subCategory || fallbackSub || '').trim();
+
+        if (!group) {
+          showMessage(`Mock "${mockData.title}" has no exam group. Skipping.`, 'error');
+          continue;
+        }
+
+        const cat = await upsertExamCategory(group, sub);
+
         const mockId = await createMockTest({
-          title: mockData.title,
-          description: mockData.description,
-          category_id: importCat.id,
-          time_limit: 60,
-          passing_mark: 40,
-          is_published: true
+          title: mockData.title || `Untitled Mock ${i + 1}`,
+          description: mockData.description || '',
+          category_id: cat.id,
+          time_limit: mockData.timeLimit ?? mockData.time_limit ?? null,
+          passing_mark: mockData.passingMark ?? mockData.passing_mark ?? null,
+          is_published: mockData.isPublished ?? false,
         });
         importedCount++;
 
-        if (mockData.questions && mockData.questions.length > 0) {
-          const qsToInsert = mockData.questions.map((q: any) => ({
+        const qs = mockData.questions ?? [];
+        if (qs.length > 0) {
+          const qsToInsert = qs.map((q: any) => ({
             question: q.question,
             options: q.options,
             correctOptionId: q.correctOptionId,
-            explanation: q.explanation
+            explanation: q.explanation,
           }));
           await createQuestions(mockId, qsToInsert);
           questionsCount += qsToInsert.length;
         }
       }
 
-      showMessage(`Successfully imported ${importedCount} mocks and ${questionsCount} questions.`, 'success');
-      loadMocks();
-    } catch (e) {
+      showMessage(`Imported ${importedCount} mocks with ${questionsCount} questions.`, 'success');
+      setJsonText('');
+      loadData();
+    } catch (e: any) {
       console.error(e);
-      showMessage('Import failed. See console for details.', 'error');
+      showMessage(`Import failed: ${e.message || 'See console'}`, 'error');
     } finally {
       setImporting(false);
       setProgress('');
     }
   };
 
+  // ─── Migration ──────────────────────────────────────────────
+  const handleMigrate = async () => {
+    if (!migrateMockId || !migrateGroup) {
+      showMessage('Select a mock and a target category.', 'error');
+      return;
+    }
+    setMigrating(true);
+    try {
+      const cat = await upsertExamCategory(migrateGroup, migrateSub);
+      await reassignMockCategory(migrateMockId, cat.id);
+      showMessage('Mock re-assigned successfully!', 'success');
+      setMigrateMockId('');
+      loadData();
+    } catch (e: any) {
+      showMessage(`Migration failed: ${e.message}`, 'error');
+    } finally {
+      setMigrating(false);
+    }
+  };
+
+  // ─── Mock list actions ──────────────────────────────────────
   const handleTogglePublished = async (mock: MockTest) => {
     try {
       await togglePublished(mock.id, !mock.is_published);
-      loadMocks();
-    } catch (e) {
+      loadData();
+    } catch {
       showMessage('Failed to update status', 'error');
     }
   };
 
   const handleDeleteMock = async (id: string) => {
     if (!window.confirm('Are you sure you want to delete this mock test? This action cannot be undone.')) return;
-    
     try {
       await deleteMockTest(id);
       showMessage('Mock test deleted successfully', 'success');
-      loadMocks();
-    } catch (e) {
+      loadData();
+    } catch {
       showMessage('Failed to delete mock test', 'error');
     }
   };
 
   return (
-    <div className="space-y-8">
-      <div className="bg-indigo-50 rounded-lg p-6 flex flex-col sm:flex-row items-center justify-between">
-        <div className="mb-4 sm:mb-0">
-          <h3 className="text-lg font-medium text-indigo-900 flex items-center">
-            <Database className="w-5 h-5 mr-2" />
-            Bulk Import
-          </h3>
-          <p className="text-sm text-indigo-700 mt-1">
-            Import mock tests and questions from the static mocks.json file. They will be added to the "Imported" category.
-          </p>
-          {progress && <p className="text-sm font-semibold text-indigo-800 mt-2">{progress}</p>}
-        </div>
-        <button
-          onClick={handleImport}
-          disabled={importing}
-          className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50"
-        >
-          {importing ? <Loader2 className="w-5 h-5 mr-2 animate-spin" /> : <Upload className="w-5 h-5 mr-2" />}
-          Import from mocks.json
-        </button>
-      </div>
+    <div className="space-y-10">
+      {/* ── Section 1: Bulk Import ──────────────────────────── */}
+      <section>
+        <h3 className="text-lg font-medium text-gray-900 flex items-center mb-4">
+          <Upload className="w-5 h-5 mr-2 text-indigo-600" />
+          Bulk Import
+        </h3>
 
-      <div>
+        {/* Fallback category selector */}
+        <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 mb-4 space-y-3">
+          <p className="text-sm text-gray-600">
+            Fallback category (used when a mock in the JSON doesn't specify its own <code className="text-xs bg-gray-200 px-1 rounded">examGroup</code> / <code className="text-xs bg-gray-200 px-1 rounded">subCategory</code>).
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {/* Exam Group */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Exam Group</label>
+              {showNewGroup ? (
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={newGroup}
+                    onChange={e => setNewGroup(e.target.value)}
+                    placeholder="e.g. CTET"
+                    className="flex-1 rounded-md border border-gray-300 p-2 text-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  />
+                  <button onClick={() => { setShowNewGroup(false); setNewGroup(''); }} className="text-xs text-gray-500 hover:text-gray-700 cursor-pointer">Cancel</button>
+                </div>
+              ) : (
+                <div className="flex gap-2">
+                  <select
+                    value={fbGroup}
+                    onChange={e => setFbGroup(e.target.value)}
+                    className="flex-1 rounded-md border border-gray-300 p-2 text-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  >
+                    <option value="">-- Select --</option>
+                    {groups.filter(g => g !== 'Imported').map(g => <option key={g} value={g}>{g}</option>)}
+                  </select>
+                  <button onClick={() => setShowNewGroup(true)} className="text-xs text-indigo-600 hover:text-indigo-800 whitespace-nowrap cursor-pointer">+ New</button>
+                </div>
+              )}
+            </div>
+
+            {/* Sub-category */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Sub-Category</label>
+              {showNewSub ? (
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={newSub}
+                    onChange={e => setNewSub(e.target.value)}
+                    placeholder="e.g. Pedagogy"
+                    className="flex-1 rounded-md border border-gray-300 p-2 text-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  />
+                  <button onClick={() => { setShowNewSub(false); setNewSub(''); }} className="text-xs text-gray-500 hover:text-gray-700 cursor-pointer">Cancel</button>
+                </div>
+              ) : (
+                <div className="flex gap-2">
+                  <select
+                    value={fbSub}
+                    onChange={e => setFbSub(e.target.value)}
+                    className="flex-1 rounded-md border border-gray-300 p-2 text-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  >
+                    <option value="">-- Select --</option>
+                    {(fbGroup ? subsForGroup(fbGroup) : []).map(s => <option key={s} value={s}>{s}</option>)}
+                  </select>
+                  <button onClick={() => setShowNewSub(true)} className="text-xs text-indigo-600 hover:text-indigo-800 whitespace-nowrap cursor-pointer">+ New</button>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* Drop zone + textarea */}
+        <div
+          onDragOver={e => { e.preventDefault(); setIsDragging(true); }}
+          onDragLeave={() => setIsDragging(false)}
+          onDrop={handleDrop}
+          className={`relative border-2 border-dashed rounded-lg p-6 transition-colors ${
+            isDragging ? 'border-indigo-400 bg-indigo-50' : 'border-gray-300 bg-white'
+          }`}
+        >
+          <div className="text-center mb-3">
+            <Upload className="w-8 h-8 text-gray-400 mx-auto mb-2" />
+            <p className="text-sm text-gray-600">
+              Drag & drop a <code className="text-xs bg-gray-100 px-1 rounded">.json</code> file here, or{' '}
+              <label className="text-indigo-600 hover:text-indigo-800 cursor-pointer font-medium">
+                browse
+                <input type="file" accept=".json" onChange={handleFileInput} className="hidden" />
+              </label>
+            </p>
+          </div>
+
+          <textarea
+            rows={8}
+            value={jsonText}
+            onChange={e => setJsonText(e.target.value)}
+            placeholder={'[\n  {\n    "title": "My Mock Test",\n    "description": "...",\n    "examGroup": "CTET",\n    "subCategory": "Pedagogy",\n    "questions": [\n      {\n        "question": "...",\n        "options": [{"id": "a", "text": "..."}, ...],\n        "correctOptionId": "a",\n        "explanation": "..."\n      }\n    ]\n  }\n]'}
+            className="w-full rounded-md border border-gray-300 p-3 text-sm font-mono focus:border-indigo-500 focus:ring-indigo-500"
+          />
+
+          {progress && <p className="text-sm font-semibold text-indigo-700 mt-2">{progress}</p>}
+
+          <div className="mt-3 flex justify-end">
+            <button
+              onClick={handleImport}
+              disabled={importing || !jsonText.trim()}
+              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 disabled:opacity-50 cursor-pointer"
+            >
+              {importing ? <Loader2 className="w-4 h-4 mr-2 animate-spin" /> : <Upload className="w-4 h-4 mr-2" />}
+              Import
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Section 2: Migration Utility ───────────────────── */}
+      {importedMocks.length > 0 && (
+        <section className="bg-amber-50 rounded-lg border border-amber-200 p-5">
+          <h3 className="text-lg font-medium text-amber-900 flex items-center mb-1">
+            <Database className="w-5 h-5 mr-2" />
+            Re-assign Imported Mocks
+          </h3>
+          <p className="text-sm text-amber-700 mb-4">
+            {importedMocks.length} mock{importedMocks.length !== 1 ? 's' : ''} currently under "Imported / Auto Import". Assign them to their correct category.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 items-end">
+            <div>
+              <label className="block text-xs font-medium text-gray-700 mb-1">Mock to move</label>
+              <select
+                value={migrateMockId}
+                onChange={e => setMigrateMockId(e.target.value)}
+                className="w-full rounded-md border border-gray-300 p-2 text-sm"
+              >
+                <option value="">-- Select --</option>
+                {importedMocks.map(m => <option key={m.id} value={m.id}>{m.title}</option>)}
+              </select>
+            </div>
+            <div>
+              <label className="block text-xs font-medium text-gray-700 mb-1">Target Exam Group</label>
+              <input
+                type="text"
+                list="migrate-groups"
+                value={migrateGroup}
+                onChange={e => setMigrateGroup(e.target.value)}
+                placeholder="e.g. CTET"
+                className="w-full rounded-md border border-gray-300 p-2 text-sm"
+              />
+              <datalist id="migrate-groups">
+                {groups.filter(g => g !== 'Imported').map(g => <option key={g} value={g} />)}
+              </datalist>
+            </div>
+            <div>
+              <label className="block text-xs font-medium text-gray-700 mb-1">Target Sub-Category</label>
+              <input
+                type="text"
+                list="migrate-subs"
+                value={migrateSub}
+                onChange={e => setMigrateSub(e.target.value)}
+                placeholder="e.g. Pedagogy"
+                className="w-full rounded-md border border-gray-300 p-2 text-sm"
+              />
+              <datalist id="migrate-subs">
+                {(migrateGroup ? subsForGroup(migrateGroup) : []).map(s => <option key={s} value={s} />)}
+              </datalist>
+            </div>
+            <button
+              onClick={handleMigrate}
+              disabled={migrating || !migrateMockId || !migrateGroup}
+              className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-amber-600 hover:bg-amber-700 disabled:opacity-50 cursor-pointer"
+            >
+              {migrating ? <Loader2 className="w-4 h-4 mr-2 animate-spin" /> : <Save className="w-4 h-4 mr-2" />}
+              Re-assign
+            </button>
+          </div>
+        </section>
+      )}
+
+      {/* ── Section 3: Existing Mocks ──────────────────────── */}
+      <section>
         <h3 className="text-lg font-medium text-gray-900 mb-4">Existing Mock Tests</h3>
         <div className="bg-white shadow overflow-hidden sm:rounded-md border border-gray-200">
           <ul className="divide-y divide-gray-200">
@@ -608,7 +863,7 @@ const ToolsTab: React.FC<{ showMessage: (m: string, t: 'success' | 'error') => v
                 <div className="flex-1 min-w-0 mb-2 sm:mb-0">
                   <p className="text-sm font-medium text-indigo-600 truncate">{mock.title}</p>
                   <p className="text-sm text-gray-500">
-                    Category: {mock.category?.exam_group} - {mock.category?.sub_category}
+                    {mock.category?.exam_group || 'No group'}{mock.category?.sub_category ? ` — ${mock.category.sub_category}` : ''}
                   </p>
                   <p className="text-xs text-gray-400 mt-1">
                     {mock.questions?.length || 0} Questions
@@ -617,7 +872,7 @@ const ToolsTab: React.FC<{ showMessage: (m: string, t: 'success' | 'error') => v
                 <div className="flex items-center space-x-4">
                   <button
                     onClick={() => handleTogglePublished(mock)}
-                    className={`flex items-center text-sm font-medium ${mock.is_published ? 'text-green-600' : 'text-gray-400'}`}
+                    className={`flex items-center text-sm font-medium cursor-pointer ${mock.is_published ? 'text-green-600' : 'text-gray-400'}`}
                   >
                     {mock.is_published ? (
                       <><ToggleRight className="w-6 h-6 mr-1" /> Published</>
@@ -627,7 +882,7 @@ const ToolsTab: React.FC<{ showMessage: (m: string, t: 'success' | 'error') => v
                   </button>
                   <button
                     onClick={() => handleDeleteMock(mock.id)}
-                    className="text-red-500 hover:text-red-700 p-2 rounded-full hover:bg-red-50 transition-colors"
+                    className="text-red-500 hover:text-red-700 p-2 rounded-full hover:bg-red-50 transition-colors cursor-pointer"
                   >
                     <Trash2 className="w-5 h-5" />
                   </button>
@@ -641,7 +896,8 @@ const ToolsTab: React.FC<{ showMessage: (m: string, t: 'success' | 'error') => v
             )}
           </ul>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
+

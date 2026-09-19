@@ -106,19 +106,49 @@ export async function getDistinctExamGroups(): Promise<string[]> {
   return [...new Set(categories.map((c) => c.exam_group))];
 }
 
-/** Create a new exam category. */
-export async function createExamCategory(
+/** Find or create an exam category (deduplicates on exam_group + sub_category). */
+export async function upsertExamCategory(
   exam_group: string,
   sub_category: string
 ): Promise<ExamCategory> {
+  const group = exam_group.trim();
+  const sub = sub_category.trim();
+
+  // Try to find existing first
+  const { data: existing } = await supabase
+    .from('exam_categories')
+    .select('*')
+    .eq('exam_group', group)
+    .eq('sub_category', sub)
+    .maybeSingle();
+
+  if (existing) return existing as ExamCategory;
+
+  // Create new
   const { data, error } = await supabase
     .from('exam_categories')
-    .insert({ exam_group: exam_group.trim(), sub_category: sub_category.trim() })
+    .insert({ exam_group: group, sub_category: sub })
     .select()
     .single();
 
   if (error) throw error;
   return data as ExamCategory;
+}
+
+/** Alias kept for backward compatibility. */
+export const createExamCategory = upsertExamCategory;
+
+/** Re-assign a mock test to a different category. */
+export async function reassignMockCategory(
+  mockId: string,
+  newCategoryId: string
+): Promise<void> {
+  const { error } = await supabase
+    .from('mock_tests')
+    .update({ category_id: newCategoryId })
+    .eq('id', mockId);
+
+  if (error) throw error;
 }
 
 // ─── Write (Mock Tests) ────────────────────────────────────

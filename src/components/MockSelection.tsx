@@ -27,26 +27,32 @@ export default function MockSelection() {
       .finally(() => setLoading(false));
   }, []);
 
-  // Derive groups
+  // Categories to hide from candidate-facing views
+  const HIDDEN_GROUPS = ['Imported'];
+  const HIDDEN_SUBS = ['Auto Import'];
+
+  // Derive groups (excluding hidden)
   const examGroups = useMemo(() => {
     const groups = mocks
       .map((m) => m.category?.exam_group)
-      .filter((g): g is string => !!g);
+      .filter((g): g is string => !!g && !HIDDEN_GROUPS.includes(g));
     return [...new Set(groups)];
   }, [mocks]);
 
-  // Derive sub-categories for active group
+  // Derive sub-categories for active group (excluding hidden)
   const subCategories = useMemo(() => {
     const subs = mocks
       .filter((m) => m.category?.exam_group === activeGroup)
       .map((m) => m.category?.sub_category)
-      .filter((s): s is string => !!s && s.length > 0);
+      .filter((s): s is string => !!s && s.length > 0 && !HIDDEN_SUBS.includes(s));
     return [...new Set(subs)];
   }, [mocks, activeGroup]);
 
-  // Filter mocks
+  // Filter mocks (also exclude hidden categories)
   const filtered = useMemo(() => {
     return mocks.filter((m) => {
+      // Always hide mocks in hidden categories
+      if (HIDDEN_GROUPS.includes(m.category?.exam_group ?? '')) return false;
       // If no categories exist at all, show everything
       if (examGroups.length === 0) return true;
       if (m.category?.exam_group !== activeGroup) return false;
