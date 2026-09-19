@@ -13,11 +13,23 @@ export interface Question {
   explanation: string;
 }
 
+/** An exam category grouping (e.g. Assam PGT → Political Science). */
+export interface ExamCategory {
+  id: string;
+  exam_group: string;
+  sub_category: string;
+}
+
 /** A complete mock test containing metadata and questions. */
 export interface MockTest {
   id: string;
   title: string;
   description: string;
+  category_id: string | null;
+  category?: ExamCategory;
+  time_limit: number | null;
+  passing_mark: number | null;
+  is_published: boolean;
   questions: Question[];
 }
 

@@ -1,25 +1,50 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import {
   ChevronLeft,
   ChevronRight,
   Send,
   AlertTriangle,
   X,
+  Loader2,
 } from 'lucide-react';
 import type { MockTest, UserAnswers } from '../types/mock';
+import { getMockTestById } from '../data/loader';
+import { computeTestResult } from '../utils/scoring';
 
-interface Props {
-  mockTest: MockTest;
-  onSubmit: (answers: UserAnswers) => void;
-  onBack: () => void;
-}
+export default function ActiveTest() {
+  const { mockId } = useParams<{ mockId: string }>();
+  const navigate = useNavigate();
 
-export default function ActiveTest({ mockTest, onSubmit, onBack }: Props) {
-  const { questions } = mockTest;
+  const [mockTest, setMockTest] = useState<MockTest | null>(null);
+  const [loading, setLoading] = useState(true);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState<UserAnswers>({});
   const [showConfirm, setShowConfirm] = useState(false);
 
+  useEffect(() => {
+    if (!mockId) return;
+    getMockTestById(mockId)
+      .then((data) => {
+        if (!data) {
+          navigate('/', { replace: true });
+          return;
+        }
+        setMockTest(data);
+      })
+      .catch(() => navigate('/', { replace: true }))
+      .finally(() => setLoading(false));
+  }, [mockId, navigate]);
+
+  if (loading || !mockTest) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center">
+        <Loader2 className="w-8 h-8 text-indigo-500 animate-spin" />
+      </div>
+    );
+  }
+
+  const { questions } = mockTest;
   const current = questions[currentIdx];
   const total = questions.length;
   const progressPercent = ((currentIdx + 1) / total) * 100;
@@ -34,6 +59,11 @@ export default function ActiveTest({ mockTest, onSubmit, onBack }: Props) {
   const answeredCount = Object.keys(answers).length;
   const unansweredCount = total - answeredCount;
 
+  const handleSubmit = () => {
+    const result = computeTestResult(mockTest, answers);
+    navigate(`/test/${mockId}/result`, { state: { result } });
+  };
+
   return (
     <>
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex flex-col">
@@ -42,7 +72,7 @@ export default function ActiveTest({ mockTest, onSubmit, onBack }: Props) {
           <div className="max-w-3xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
               <button
-                onClick={onBack}
+                onClick={() => navigate('/')}
                 className="text-sm text-slate-500 hover:text-slate-700 flex items-center gap-1 transition-colors cursor-pointer"
               >
                 <ChevronLeft className="w-4 h-4" />
@@ -136,7 +166,7 @@ export default function ActiveTest({ mockTest, onSubmit, onBack }: Props) {
       {/* Confirmation Modal */}
       {showConfirm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4">
-          <div className="bg-white rounded-2xl shadow-xl max-w-sm w-full p-6 animate-in zoom-in-95">
+          <div className="bg-white rounded-2xl shadow-xl max-w-sm w-full p-6">
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 bg-amber-100 rounded-full">
                 <AlertTriangle className="w-5 h-5 text-amber-600" />
@@ -166,7 +196,9 @@ export default function ActiveTest({ mockTest, onSubmit, onBack }: Props) {
                   <span className="font-semibold text-amber-600">
                     {unansweredCount}
                   </span>{' '}
-                  {unansweredCount === 1 ? 'question remains' : 'questions remain'}{' '}
+                  {unansweredCount === 1
+                    ? 'question remains'
+                    : 'questions remain'}{' '}
                   unanswered and will be marked as skipped.
                 </>
               )}
@@ -180,7 +212,7 @@ export default function ActiveTest({ mockTest, onSubmit, onBack }: Props) {
                 Go Back
               </button>
               <button
-                onClick={() => onSubmit(answers)}
+                onClick={handleSubmit}
                 className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700 transition-colors cursor-pointer"
               >
                 Confirm Submit

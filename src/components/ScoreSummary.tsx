@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import {
   CheckCircle2,
   XCircle,
@@ -12,25 +13,35 @@ import type { TestResult, QuestionResult } from '../types/mock';
 
 type Filter = 'all' | 'correct' | 'incorrect';
 
-interface Props {
-  result: TestResult;
-  onRetake: () => void;
-  onBackToMocks: () => void;
-}
+export default function ScoreSummary() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { mockId } = useParams<{ mockId: string }>();
 
-export default function ScoreSummary({
-  result,
-  onRetake,
-  onBackToMocks,
-}: Props) {
+  const result = location.state?.result as TestResult | undefined;
+
   const [filter, setFilter] = useState<Filter>('all');
 
-  const { totalQuestions, correctCount, incorrectCount, skippedCount, accuracyPercent, questionResults } = result;
+  // If no result in state (e.g. direct URL access), go home
+  if (!result) {
+    navigate('/', { replace: true });
+    return null;
+  }
+
+  const {
+    totalQuestions,
+    correctCount,
+    incorrectCount,
+    skippedCount,
+    accuracyPercent,
+    questionResults,
+  } = result;
 
   const filtered: QuestionResult[] = questionResults.filter((r) => {
     if (filter === 'correct') return r.isCorrect;
-    if (filter === 'incorrect') return !r.isCorrect && r.selectedOptionId !== null;
-    return true; // 'all'
+    if (filter === 'incorrect')
+      return !r.isCorrect && r.selectedOptionId !== null;
+    return true;
   });
 
   const filters: { key: Filter; label: string }[] = [
@@ -54,14 +65,14 @@ export default function ScoreSummary({
           </div>
           <div className="flex gap-2">
             <button
-              onClick={onRetake}
+              onClick={() => navigate(`/test/${mockId}`)}
               className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer"
             >
               <RotateCcw className="w-4 h-4" />
               Retake
             </button>
             <button
-              onClick={onBackToMocks}
+              onClick={() => navigate('/')}
               className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-2 text-sm font-medium text-white hover:bg-indigo-700 transition-colors cursor-pointer"
             >
               <ArrowLeft className="w-4 h-4" />
@@ -74,7 +85,6 @@ export default function ScoreSummary({
       <main className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8 space-y-8">
         {/* Score cards */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {/* Total score */}
           <div className="col-span-2 sm:col-span-1 bg-white rounded-2xl border border-slate-200 p-5 text-center shadow-sm">
             <p className="text-3xl font-bold text-indigo-600">
               {correctCount}/{totalQuestions}
@@ -83,8 +93,6 @@ export default function ScoreSummary({
               Score
             </p>
           </div>
-
-          {/* Accuracy */}
           <div className="col-span-2 sm:col-span-1 bg-white rounded-2xl border border-slate-200 p-5 text-center shadow-sm">
             <p className="text-3xl font-bold text-indigo-600">
               {accuracyPercent}%
@@ -93,8 +101,6 @@ export default function ScoreSummary({
               Accuracy
             </p>
           </div>
-
-          {/* Correct */}
           <div className="bg-emerald-50 rounded-2xl border border-emerald-200 p-5 text-center shadow-sm">
             <div className="flex items-center justify-center gap-1.5">
               <CheckCircle2 className="w-5 h-5 text-emerald-600" />
@@ -106,8 +112,6 @@ export default function ScoreSummary({
               Correct
             </p>
           </div>
-
-          {/* Incorrect */}
           <div className="bg-red-50 rounded-2xl border border-red-200 p-5 text-center shadow-sm">
             <div className="flex items-center justify-center gap-1.5">
               <XCircle className="w-5 h-5 text-red-600" />
@@ -121,7 +125,6 @@ export default function ScoreSummary({
           </div>
         </div>
 
-        {/* Skipped badge (only if any) */}
         {skippedCount > 0 && (
           <div className="flex justify-center">
             <div className="inline-flex items-center gap-2 bg-slate-100 rounded-full px-4 py-2 text-sm text-slate-600">
@@ -168,7 +171,6 @@ export default function ScoreSummary({
                 key={question.id}
                 className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"
               >
-                {/* Question header */}
                 <div className="px-5 py-4 border-b border-slate-100 flex items-start gap-3">
                   <span className="mt-0.5">
                     {isCorrect ? (
@@ -189,7 +191,6 @@ export default function ScoreSummary({
                   </div>
                 </div>
 
-                {/* Options review */}
                 <div className="px-5 py-3 space-y-2">
                   {question.options.map((opt) => {
                     const isUserChoice = opt.id === selectedOptionId;
@@ -198,7 +199,6 @@ export default function ScoreSummary({
 
                     let optClasses =
                       'rounded-lg border px-4 py-2.5 text-sm flex items-center gap-2 ';
-
                     if (isCorrectAnswer) {
                       optClasses +=
                         'border-emerald-300 bg-emerald-50 text-emerald-800';
@@ -238,7 +238,6 @@ export default function ScoreSummary({
                   })}
                 </div>
 
-                {/* Explanation */}
                 <div className="px-5 py-4 bg-amber-50 border-t border-amber-100">
                   <div className="flex items-start gap-2">
                     <Lightbulb className="w-4 h-4 text-amber-500 mt-0.5 shrink-0" />
