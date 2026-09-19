@@ -1,0 +1,1872 @@
+[
+  {
+    "id": "mock-1",
+    "title": "Child Development & Growth Principles",
+    "description": "Examine physical, cognitive, and psychosocial developmental stages, motor milestones, and foundational psychological theories.",
+    "questions": [
+      {
+        "id": "m1-q1",
+        "question": "Which principle of motor development dictates that bodily control proceeds from the trunk outward toward the extremities?",
+        "options": [
+          { "id": "m1-q1-a", "text": "Cephalocaudal principle" },
+          { "id": "m1-q1-b", "text": "Proximodistal principle" },
+          { "id": "m1-q1-c", "text": "Hierarchical integration" },
+          { "id": "m1-q1-d", "text": "Orthogenetic principle" }
+        ],
+        "correctOptionId": "m1-q1-b",
+        "explanation": "The proximodistal trend describes directional growth and motor control moving from the central axis (torso) outwards toward the fingers and toes."
+      },
+      {
+        "id": "m1-q2",
+        "question": "According to Jean Piaget, at which stage does an adolescent develop the capacity for hypothetical-deductive reasoning?",
+        "options": [
+          { "id": "m1-q2-a", "text": "Sensorimotor stage" },
+          { "id": "m1-q2-b", "text": "Preoperational stage" },
+          { "id": "m1-q2-c", "text": "Concrete operational stage" },
+          { "id": "m1-q2-d", "text": "Formal operational stage" }
+        ],
+        "correctOptionId": "m1-q2-d",
+        "explanation": "Formal operations (beginning around age 11+) marks the onset of abstract thinking, propositional logic, and systematic hypothesis testing."
+      },
+      {
+        "id": "m1-q3",
+        "question": "G. Stanley Hall famously termed the period of adolescence as a time of:",
+        "options": [
+          { "id": "m1-q3-a", "text": "Peace and consolidation" },
+          { "id": "m1-q3-b", "text": "Storm and stress" },
+          { "id": "m1-q3-c", "text": "Sensory-motor play" },
+          { "id": "m1-q3-d", "text": "Concrete conceptualization" }
+        ],
+        "correctOptionId": "m1-q3-b",
+        "explanation": "Hall introduced the German literary concept 'Sturm und Drang' (storm and stress) to psychology to define turbulent adolescent emotional and physical changes."
+      },
+      {
+        "id": "m1-q4",
+        "question": "According to Erik Erikson, what is the central psychosocial crisis faced during adolescence?",
+        "options": [
+          { "id": "m1-q4-a", "text": "Trust vs. Mistrust" },
+          { "id": "m1-q4-b", "text": "Initiative vs. Guilt" },
+          { "id": "m1-q4-c", "text": "Identity vs. Role Confusion" },
+          { "id": "m1-q4-d", "text": "Generativity vs. Stagnation" }
+        ],
+        "correctOptionId": "m1-q4-c",
+        "explanation": "Adolescents explore personal identity, values, and vocational directions; failure to reconcile these roles results in role confusion."
+      },
+      {
+        "id": "m1-q5",
+        "question": "Lev Vygotsky proposed that the distance between what a child can do independently and what they can achieve with guidance is the:",
+        "options": [
+          { "id": "m1-q5-a", "text": "Zone of Proximal Development (ZPD)" },
+          { "id": "m1-q5-b", "text": "Equilibration phase" },
+          { "id": "m1-q5-c", "text": "Scaffolding plateau" },
+          { "id": "m1-q5-d", "text": "Autonomous threshold" }
+        ],
+        "correctOptionId": "m1-q5-a",
+        "explanation": "The Zone of Proximal Development defines the learning bandwidth where a child benefits from the guidance of a More Knowledgeable Other (MKO)."
+      },
+      {
+        "id": "m1-q6",
+        "question": "Which of the following traits is characteristic of 'later childhood' (ages 6 to 12)?",
+        "options": [
+          { "id": "m1-q6-a", "text": "Extreme egocentrism in communicative speech" },
+          { "id": "m1-q6-b", "text": "Emergence of peer-group loyalty and gang age behaviour" },
+          { "id": "m1-q6-c", "text": "Rapid, unstable physiological growth identical to infancy" },
+          { "id": "m1-q6-d", "text": "Complete detachment from physical play" }
+        ],
+        "correctOptionId": "m1-q6-b",
+        "explanation": "Later childhood is recognized sociologically as the 'gang age', characterized by peer socialization, group rules, and steady physical development."
+      },
+      {
+        "id": "m1-q7",
+        "question": "When an adolescent accepts ideological beliefs and career goals from parents without exploring alternatives, James Marcia terms this identity status:",
+        "options": [
+          { "id": "m1-q7-a", "text": "Identity Diffusion" },
+          { "id": "m1-q7-b", "text": "Identity Foreclosure" },
+          { "id": "m1-q7-c", "text": "Identity Moratorium" },
+          { "id": "m1-q7-d", "text": "Identity Achievement" }
+        ],
+        "correctOptionId": "m1-q7-b",
+        "explanation": "Foreclosure occurs when commitment to an identity is made prematurely without experiencing an active exploration or crisis period."
+      },
+      {
+        "id": "m1-q8",
+        "question": "In development theory, the enduring debate over the influence of biological heredity versus social environment is termed:",
+        "options": [
+          { "id": "m1-q8-a", "text": "Continuous vs. Discontinuous learning" },
+          { "id": "m1-q8-b", "text": "Nature vs. Nurture debate" },
+          { "id": "m1-q8-c", "text": "Equilibrium vs. Disequilibrium" },
+          { "id": "m1-q8-d", "text": "Cognitive vs. Affective dichotomy" }
+        ],
+        "correctOptionId": "m1-q8-b",
+        "explanation": "Nature reflects genetic and biological endowments, while nurture captures environmental, cultural, and familial experiences."
+      },
+      {
+        "id": "m1-q9",
+        "question": "Which of the following reflexes demonstrates normal neurological development in an infant when the sole of the foot is firmly stroked?",
+        "options": [
+          { "id": "m1-q9-a", "text": "Moro reflex" },
+          { "id": "m1-q9-b", "text": "Babinski reflex" },
+          { "id": "m1-q9-c", "text": "Palmar grasp" },
+          { "id": "m1-q9-d", "text": "Rooting reflex" }
+        ],
+        "correctOptionId": "m1-q9-b",
+        "explanation": "The Babinski reflex causes the big toe to bend backward and other toes to fan out when the bottom of an infant's foot is firmly stimulated."
+      },
+      {
+        "id": "m1-q10",
+        "question": "Which ecological system in Bronfenbrenner's model comprises the immediate direct relationships of a child (e.g., family, classroom, peers)?",
+        "options": [
+          { "id": "m1-q10-a", "text": "Microsystem" },
+          { "id": "m1-q10-b", "text": "Mesosystem" },
+          { "id": "m1-q10-c", "text": "Exosystem" },
+          { "id": "m1-q10-d", "text": "Macrosystem" }
+        ],
+        "correctOptionId": "m1-q10-a",
+        "explanation": "The microsystem encompasses direct bi-directional interactions within the child's immediate daily environment."
+      },
+      {
+        "id": "m1-q11",
+        "question": "Piaget's concept of modifying existing cognitive schemas to incorporate new conflicting information is called:",
+        "options": [
+          { "id": "m1-q11-a", "text": "Assimilation" },
+          { "id": "m1-q11-b", "text": "Accommodation" },
+          { "id": "m1-q11-c", "text": "Decentration" },
+          { "id": "m1-q11-d", "text": "Conservation" }
+        ],
+        "correctOptionId": "m1-q11-b",
+        "explanation": "Accommodation alters existing cognitive schemas when current models cannot explain novel environmental data."
+      },
+      {
+        "id": "m1-q12",
+        "question": "A child who judges the morality of an action solely based on physical consequences and avoidance of punishment is in Kohlberg's:",
+        "options": [
+          { "id": "m1-q12-a", "text": "Pre-conventional level" },
+          { "id": "m1-q12-b", "text": "Conventional level" },
+          { "id": "m1-q12-c", "text": "Post-conventional level" },
+          { "id": "m1-q12-d", "text": "Autonomous stage" }
+        ],
+        "correctOptionId": "m1-q12-a",
+        "explanation": "Pre-conventional morality centers on obedience, punishment avoidance, and direct instrumental self-interest."
+      },
+      {
+        "id": "m1-q13",
+        "question": "The development of fine motor skills in primary grade children is best exemplified by:",
+        "options": [
+          { "id": "m1-q13-a", "text": "Kicking a football across a playground" },
+          { "id": "m1-q13-b", "text": "Cutting shapes along lines using safety scissors" },
+          { "id": "m1-q13-c", "text": "Sprinting during a relay race" },
+          { "id": "m1-q13-d", "text": "Jumping with both feet off a low ledge" }
+        ],
+        "correctOptionId": "m1-q13-b",
+        "explanation": "Fine motor development involves coordination of small muscle movements in the hands, wrists, and fingers."
+      },
+      {
+        "id": "m1-q14",
+        "question": "Which developmental milestone signifies the transition from the sensorimotor stage to preoperational thinking?",
+        "options": [
+          { "id": "m1-q14-a", "text": "Mastery of algebraic formulas" },
+          { "id": "m1-q14-b", "text": "Emergence of object permanence and symbolic representation" },
+          { "id": "m1-q14-c", "text": "Abstract ethical evaluation" },
+          { "id": "m1-q14-d", "text": "Complex inductive problem solving" }
+        ],
+        "correctOptionId": "m1-q14-b",
+        "explanation": "Object permanence and semiotic/symbolic thought allow infants to mentally picture objects not immediately visible."
+      },
+      {
+        "id": "m1-q15",
+        "question": "The emotional regulation pattern where an adolescent controls expressive behavior to suit cultural expectations is part of developing:",
+        "options": [
+          { "id": "m1-q15-a", "text": "Emotional maturity" },
+          { "id": "m1-q15-b", "text": "Cognitive rigidity" },
+          { "id": "m1-q15-c", "text": "Sensory regression" },
+          { "id": "m1-q15-d", "text": "Compulsive introversion" }
+        ],
+        "correctOptionId": "m1-q15-a",
+        "explanation": "Emotional maturity involves adapting affective responses constructively within social rules while retaining emotional self-awareness."
+      }
+    ]
+  },
+  {
+    "id": "mock-2",
+    "title": "Learning Theories & Pedagogical Approaches",
+    "description": "Evaluate mastery of behavioral, cognitive, constructivist, and humanistic teaching-learning models and classroom applications.",
+    "questions": [
+      {
+        "id": "m2-q1",
+        "question": "Edward Thorndike's 'Law of Readiness' implies that learning is most efficient when:",
+        "options": [
+          { "id": "m2-q1-a", "text": "A student is physically forced into complete silence" },
+          { "id": "m2-q1-b", "text": "The learner's neurological and motivational disposition is primed for action" },
+          { "id": "m2-q1-c", "text": "Repetitive mechanical drills are repeated daily without variation" },
+          { "id": "m2-q1-d", "text": "Summative test scores are shared openly among peers" }
+        ],
+        "correctOptionId": "m2-q1-b",
+        "explanation": "Thorndike's Law of Readiness states that when conduction units are ready to conduct, doing so is satisfying and promotes optimal learning."
+      },
+      {
+        "id": "m2-q2",
+        "question": "In Albert Bandura's Social Observational Learning theory, what is the correct four-step sequence of modeling?",
+        "options": [
+          { "id": "m2-q2-a", "text": "Attention -> Retention -> Production -> Motivation" },
+          { "id": "m2-q2-b", "text": "Motivation -> Attention -> Retention -> Production" },
+          { "id": "m2-q2-c", "text": "Retention -> Production -> Motivation -> Attention" },
+          { "id": "m2-q2-d", "text": "Attention -> Motivation -> Retention -> Production" }
+        ],
+        "correctOptionId": "m2-q2-a",
+        "explanation": "Observational learning progresses through paying attention, retaining memory traces, reproducing motor actions, and applying motivational reinforcement."
+      },
+      {
+        "id": "m2-q3",
+        "question": "In progressive education as articulated by John Dewey, the primary role of the classroom teacher is as a:",
+        "options": [
+          { "id": "m2-q3-a", "text": "Didactic repository of absolute knowledge" },
+          { "id": "m2-q3-b", "text": "Facilitator and guide of experiential inquiry" },
+          { "id": "m2-q3-c", "text": "Strict disciplinarian and test grader" },
+          { "id": "m2-q3-d", "text": "Passive observer who avoids class design" }
+        ],
+        "correctOptionId": "m2-q3-b",
+        "explanation": "Dewey envisioned democratic, learner-centric classrooms where instructors facilitate reflective, cooperative, and experiential learning."
+      },
+      {
+        "id": "m2-q4",
+        "question": "Negative reinforcement in operant conditioning refers to:",
+        "options": [
+          { "id": "m2-q4-a", "text": "Administering a punitive verbal consequence" },
+          { "id": "m2-q4-b", "text": "Withholding all positive rewards entirely" },
+          { "id": "m2-q4-c", "text": "Strengthening a target behavior by removing an aversive or unpleasant stimulus" },
+          { "id": "m2-q4-d", "text": "Extinguishing a habit through strict isolation" }
+        ],
+        "correctOptionId": "m2-q4-c",
+        "explanation": "Reinforcement always increases behavioral frequency; negative reinforcement achieves this by eliminating an annoying or noxious condition."
+      },
+      {
+        "id": "m2-q5",
+        "question": "Which educational paradigm emphasizes individual autonomy, intrinsic self-actualization, and emotional well-being above mechanistic stimulus-response conditioning?",
+        "options": [
+          { "id": "m2-q5-a", "text": "Humanistic theory (Rogers, Maslow)" },
+          { "id": "m2-q5-b", "text": "Classical behaviorism (Watson)" },
+          { "id": "m2-q5-c", "text": "Connectionism (Thorndike)" },
+          { "id": "m2-q5-d", "text": "Information processing theory" }
+        ],
+        "correctOptionId": "m2-q5-a",
+        "explanation": "Humanistic pedagogy highlights personal growth, self-actualization, and emotional health, regarding each learner as an inherently unique individual."
+      },
+      {
+        "id": "m2-q6",
+        "question": "A teacher displays real fruits and flashcards with images when introducing vocabulary to early graders. This method relies heavily on:",
+        "options": [
+          { "id": "m2-q6-a", "text": "Classical conditioning and associative pairing" },
+          { "id": "m2-q6-b", "text": "Psychoanalytic free association" },
+          { "id": "m2-q6-c", "text": "Purely abstract deductive logic" },
+          { "id": "m2-q6-d", "text": "Negative reinforcement" }
+        ],
+        "correctOptionId": "m2-q6-a",
+        "explanation": "Pairing sensory illustrations with spoken and written words creates paired association foundational to classical conditioning and basic vocabulary building."
+      },
+      {
+        "id": "m2-q7",
+        "question": "Dwight W. Allen is renowned in teacher education for introducing which methodology?",
+        "options": [
+          { "id": "m2-q7-a", "text": "Programmed instruction" },
+          { "id": "m2-q7-b", "text": "Microteaching" },
+          { "id": "m2-q7-c", "text": "Montessori method" },
+          { "id": "m2-q7-d", "text": "Discovery learning" }
+        ],
+        "correctOptionId": "m2-q7-b",
+        "explanation": "Dwight Allen developed microteaching at Stanford University in 1963 as a scaled-down pedagogical practice technique focusing on individual teaching skills."
+      },
+      {
+        "id": "m2-q8",
+        "question": "Which of the following verbal prompts best stimulates intrinsic motivation in a learner?",
+        "options": [
+          { "id": "m2-q8-a", "text": "\"Finish before your neighbor to win chocolates!\"" },
+          { "id": "m2-q8-b", "text": "\"Why are you lagging behind? See how neatly your peer works.\"" },
+          { "id": "m2-q8-c", "text": "\"Give it a try; working through this problem will deepen your understanding.\"" },
+          { "id": "m2-q8-d", "text": "\"If you don't finish in five minutes, you will lose recess.\"" }
+        ],
+        "correctOptionId": "m2-q8-c",
+        "explanation": "Intrinsic motivation thrives on mastery orientation, curiosity, and personal competence, avoiding external competitive bribes or threats."
+      },
+      {
+        "id": "m2-q9",
+        "question": "The concept of 'Learner Agency' implies that students:",
+        "options": [
+          { "id": "m2-q9-a", "text": "Take active ownership, voice, and personal responsibility in their learning process" },
+          { "id": "m2-q9-b", "text": "Subserviently complete teacher-dictated notes" },
+          { "id": "m2-q9-c", "text": "Dictate classroom administrative policy" },
+          { "id": "m2-q9-d", "text": "Refuse to take any form of written assessment" }
+        ],
+        "correctOptionId": "m2-q9-a",
+        "explanation": "Learner agency reflects self-regulation, active investment, and purposeful choices in directing one's own educational journey."
+      },
+      {
+        "id": "m2-q10",
+        "question": "Jerome Bruner's theory of instruction advocates a 'spiral curriculum', meaning that:",
+        "options": [
+          { "id": "m2-q10-a", "text": "Topics are covered once thoroughly and never revisited" },
+          { "id": "m2-q10-b", "text": "Complex ideas are revisited at deeper levels of sophistication as the learner develops" },
+          { "id": "m2-q10-c", "text": "Curriculum must only focus on vocational motor training" },
+          { "id": "m2-q10-d", "text": "Curricular content is dictated solely by random student interest" }
+        ],
+        "correctOptionId": "m2-q10-b",
+        "explanation": "A spiral curriculum revisits foundational concepts periodically with increasing depth and cognitive sophistication."
+      },
+      {
+        "id": "m2-q11",
+        "question": "According to Wolfgang Köhler, problem solving in Sultan the chimpanzee occurred primarily via:",
+        "options": [
+          { "id": "m2-q11-a", "text": "Trial and error motor flailing" },
+          { "id": "m2-q11-b", "text": "Sudden insightful learning (Gestalt)" },
+          { "id": "m2-q11-c", "text": "Mechanistic operant shaping" },
+          { "id": "m2-q11-d", "text": "Chemical conditioning" }
+        ],
+        "correctOptionId": "m2-q11-b",
+        "explanation": "Köhler argued that cognitive restructuring of the perceptual field leads to sudden insight ('aha' moment), distinct from blind trial-and-error."
+      },
+      {
+        "id": "m2-q12",
+        "question": "Which instructional tactic directly supports divergent thinking in learners?",
+        "options": [
+          { "id": "m2-q12-a", "text": "Multiple choice questions with one fixed answer" },
+          { "id": "m2-q12-b", "text": "Open-ended brainstorming challenges with multiple pathways" },
+          { "id": "m2-q12-c", "text": "Standardized rote transcription from textbooks" },
+          { "id": "m2-q12-d", "text": "Memorizing formula sequences verbatim" }
+        ],
+        "correctOptionId": "m2-q12-b",
+        "explanation": "Divergent thinking involves lateral, flexible, 'out-of-the-box' thinking that generates multiple novel solutions to a given problem."
+      },
+      {
+        "id": "m2-q13",
+        "question": "In Pavlovian conditioning, an initially neutral stimulus becomes a conditioned stimulus after:",
+        "options": [
+          { "id": "m2-q13-a", "text": "Direct pairing with an unconditioned stimulus" },
+          { "id": "m2-q13-b", "text": "Complete extinction and prolonged rest" },
+          { "id": "m2-q13-c", "text": "Cognitive dispute sessions" },
+          { "id": "m2-q13-d", "text": "Biological maturation only" }
+        ],
+        "correctOptionId": "m2-q13-a",
+        "explanation": "Repeated associative pairing of a neutral stimulus (e.g., bell) with an unconditioned stimulus (food) turns the neutral cue into a conditioned stimulus."
+      },
+      {
+        "id": "m2-q14",
+        "question": "David Ausubel's concept of 'Advance Organizers' is designed to:",
+        "options": [
+          { "id": "m2-q14-a", "text": "Entertain students prior to strict lecturing" },
+          { "id": "m2-q14-b", "text": "Provide cognitive scaffolding that links new information to existing mental structures" },
+          { "id": "m2-q14-c", "text": "Test students summatively before lessons begin" },
+          { "id": "m2-q14-d", "text": "Rank learners into ability groupings" }
+        ],
+        "correctOptionId": "m2-q14-b",
+        "explanation": "Advance organizers are introductory materials presented at a high level of abstraction to bridge old and new knowledge."
+      },
+      {
+        "id": "m2-q15",
+        "question": "Constructivism views learners not as passive empty vessels ('tabula rasa') but as:",
+        "options": [
+          { "id": "m2-q15-a", "text": "Active meaning makers constructing knowledge based on schema and experiences" },
+          { "id": "m2-q15-b", "text": "Strict biological stimulus-response receivers" },
+          { "id": "m2-q15-c", "text": "Rote memorizers evaluated solely on speed" },
+          { "id": "m2-q15-d", "text": "Recipients of fixed absolute truths" }
+        ],
+        "correctOptionId": "m2-q15-a",
+        "explanation": "Constructivist epistemology asserts that learners dynamically synthesize meaning from their physical and social environments."
+      }
+    ]
+  },
+  {
+    "id": "mock-3",
+    "title": "Inclusive Education & Learning Disabilities",
+    "description": "Assess clinical diagnoses, pedagogic accommodations, and legal safeguards for neurodiverse learners and children with special needs.",
+    "questions": [
+      {
+        "id": "m3-q1",
+        "question": "A learner exhibits severe reversal of letters (b/d), word omissions, and poor decoding during oral reading. These are diagnostic symptoms of:",
+        "options": [
+          { "id": "m3-q1-a", "text": "Dyscalculia" },
+          { "id": "m3-q1-b", "text": "Dysgraphia" },
+          { "id": "m3-q1-c", "text": "Dyslexia" },
+          { "id": "m3-q1-d", "text": "Dyspraxia" }
+        ],
+        "correctOptionId": "m3-q1-c",
+        "explanation": "Dyslexia is a neurodevelopmental specific learning disability marked by difficulties with accurate and fluent phonological word recognition and spelling."
+      },
+      {
+        "id": "m3-q2",
+        "question": "Which learning disability specifically impairs gross and fine motor skill coordination, physical balance, and motor planning?",
+        "options": [
+          { "id": "m3-q2-a", "text": "Dyspraxia" },
+          { "id": "m3-q2-b", "text": "Dysphasia" },
+          { "id": "m3-q2-c", "text": "Agraphia" },
+          { "id": "m3-q2-d", "text": "Dysphoria" }
+        ],
+        "correctOptionId": "m3-q2-a",
+        "explanation": "Dyspraxia (Developmental Coordination Disorder) hinders physical motor coordination, spatial orientation, and fine manual tasks."
+      },
+      {
+        "id": "m3-q3",
+        "question": "An inclusive classroom strategy that provides differentiated, multi-level learning options tailored to student readiness and interest is called:",
+        "options": [
+          { "id": "m3-q3-a", "text": "Standardized tracking" },
+          { "id": "m3-q3-b", "text": "Differentiated Instruction" },
+          { "id": "m3-q3-c", "text": "Homogeneous segregation" },
+          { "id": "m3-q3-d", "text": "Summative isolation" }
+        ],
+        "correctOptionId": "m3-q3-b",
+        "explanation": "Differentiated instruction adapts curricular content, learning processes, and product expectations to individual student profiles."
+      },
+      {
+        "id": "m3-q4",
+        "question": "A student in grade VI with Autism Spectrum Disorder (ASD) becomes overwhelmed during noisy, unstructured transition periods. The teacher should:",
+        "options": [
+          { "id": "m3-q4-a", "text": "Punish the student for insubordination" },
+          { "id": "m3-q4-b", "text": "Create predictable visual schedules and structured quiet zones" },
+          { "id": "m3-q4-c", "text": "Send the child home whenever transitions happen" },
+          { "id": "m3-q4-d", "text": "Demand that the child suppress all sensory discomfort" }
+        ],
+        "correctOptionId": "m3-q4-b",
+        "explanation": "Visual timetables, clear transition routines, and sensory quiet stations provide structural safety for learners with ASD."
+      },
+      {
+        "id": "m3-q5",
+        "question": "Under the Rights of Persons with Disabilities (RPwD) Act, 2016 in India, the number of recognized disability categories was expanded to:",
+        "options": [
+          { "id": "m3-q5-a", "text": "7" },
+          { "id": "m3-q5-b", "text": "14" },
+          { "id": "m3-q5-c", "text": "21" },
+          { "id": "m3-q5-d", "text": "28" }
+        ],
+        "correctOptionId": "m3-q5-c",
+        "explanation": "The RPwD Act 2016 expanded recognized disabilities from 7 under the 1995 Act to 21 categories, including specific learning disabilities and acid attack survivors."
+      },
+      {
+        "id": "m3-q6",
+        "question": "Which of the following describes 'Dysgraphia'?",
+        "options": [
+          { "id": "m3-q6-a", "text": "Inability to grasp mathematical formulas" },
+          { "id": "m3-q6-b", "text": "Impairment in producing legible, organized written expression and motor handwriting mechanics" },
+          { "id": "m3-q6-c", "text": "Total absence of spoken linguistic comprehension" },
+          { "id": "m3-q6-d", "text": "Sensory-neural hearing loss" }
+        ],
+        "correctOptionId": "m3-q6-b",
+        "explanation": "Dysgraphia affects spatial layout, letter consistency, grip strength, and motor execution of handwriting."
+      },
+      {
+        "id": "m3-q7",
+        "question": "For a child identified with Attention-Deficit/Hyperactivity Disorder (ADHD), the most supportive seating arrangement is:",
+        "options": [
+          { "id": "m3-q7-a", "text": "At the very back, isolated from all peers" },
+          { "id": "m3-q7-b", "text": "Near the front, close to the instructor and away from distracting windows, with sensory movement allowances" },
+          { "id": "m3-q7-c", "text": "Facing the corner wall outside of instructional line of sight" },
+          { "id": "m3-q7-d", "text": "In an adjoining empty classroom" }
+        ],
+        "correctOptionId": "m3-q7-b",
+        "explanation": "Proximity to teacher guidance without high sensory distraction helps learners with ADHD focus and self-monitor."
+      },
+      {
+        "id": "m3-q8",
+        "question": "The primary objective of 'Universal Design for Learning' (UDL) is to:",
+        "options": [
+          { "id": "m3-q8-a", "text": "Design a single rigid curriculum that all students must pass identically" },
+          { "id": "m3-q8-b", "text": "Provide multiple means of representation, expression, and engagement from the outset" },
+          { "id": "m3-q8-c", "text": "Construct physical school buildings using standardized architecture" },
+          { "id": "m3-q8-d", "text": "Exempt struggling learners from all examinations" }
+        ],
+        "correctOptionId": "m3-q8-b",
+        "explanation": "UDL reduces barriers proactively by providing varied ways to absorb information, show mastery, and sustain interest."
+      },
+      {
+        "id": "m3-q9",
+        "question": "Which of the following teacher qualities is LEAST relevant to fostering inclusion in a heterogeneous classroom?",
+        "options": [
+          { "id": "m3-q9-a", "text": "Socio-economic status and personal wealth of the teacher" },
+          { "id": "m3-q9-b", "text": "Knowledge regarding various physical and developmental disorders" },
+          { "id": "m3-q9-c", "text": "Empathy, warmth, and patience toward learner differences" },
+          { "id": "m3-q9-d", "text": "Skill in designing multimodal instructional aids" }
+        ],
+        "correctOptionId": "m3-q9-a",
+        "explanation": "A teacher's personal wealth or socio-economic standing has zero relevance to their pedagogical ability and empathetic capacity in the classroom."
+      },
+      {
+        "id": "m3-q10",
+        "question": "A learner diagnosed with expressive dysphasia (aphasia) will face the greatest challenge when asked to:",
+        "options": [
+          { "id": "m3-q10-a", "text": "Formulate and articulate spoken ideas coherently" },
+          { "id": "m3-q10-b", "text": "Complete silent visual puzzle matching" },
+          { "id": "m3-q10-c", "text": "Run on an athletic track" },
+          { "id": "m3-q10-d", "text": "Follow physical gestures in dance class" }
+        ],
+        "correctOptionId": "m3-q10-a",
+        "explanation": "Expressive dysphasia affects speech production and language generation, even when conceptual comprehension is intact."
+      },
+      {
+        "id": "m3-q11",
+        "question": "When teaching a multilingual class with non-native speakers, the first priority for an inclusive educator is to:",
+        "options": [
+          { "id": "m3-q11-a", "text": "Ban the use of mother tongues immediately in school" },
+          { "id": "m3-q11-b", "text": "Establish a welcoming environment, assess proficiency, and pair with bilingual supportive peers" },
+          { "id": "m3-q11-c", "text": "Instruct them to remain silent until they achieve total grammatical accuracy" },
+          { "id": "m3-q11-d", "text": "Deduct test marks for accent errors" }
+        ],
+        "correctOptionId": "m3-q11-b",
+        "explanation": "Affirmative emotional safety, diagnostic appraisal, and peer-scaffolding facilitate second-language integration without linguistic shock."
+      },
+      {
+        "id": "m3-q12",
+        "question": "Which of the following is considered an assistive technology tool for a child with severe visual impairment?",
+        "options": [
+          { "id": "m3-q12-a", "text": "A standard printed paperback dictionary" },
+          { "id": "m3-q12-b", "text": "Screen reading software like JAWS or NVDA" },
+          { "id": "m3-q12-c", "text": "Ballpoint writing pens" },
+          { "id": "m3-q12-d", "text": "Silent chalkboard slides" }
+        ],
+        "correctOptionId": "m3-q12-b",
+        "explanation": "Screen readers convert digital text to synthetic speech or refreshable Braille displays, enabling autonomous digital literacy."
+      },
+      {
+        "id": "m3-q13",
+        "question": "An Individualized Education Plan (IEP) is essentially a:",
+        "options": [
+          { "id": "m3-q13-a", "text": "Disciplinary contract signed by school security" },
+          { "id": "m3-q13-b", "text": "Tailored instructional document outlining specific learning goals and accommodations for a student with special needs" },
+          { "id": "m3-q13-c", "text": "Standardized report card used for the entire school" },
+          { "id": "m3-q13-d", "text": "Formal document rusticating an irregular student" }
+        ],
+        "correctOptionId": "m3-q13-b",
+        "explanation": "An IEP is a legally binding, collaborative document detailing custom goals, services, and modifications for a student with special needs."
+      },
+      {
+        "id": "m3-q14",
+        "question": "How should a teacher interpret errors made by students with learning disabilities?",
+        "options": [
+          { "id": "m3-q14-a", "text": "As behavioral defiance needing instant reprimand" },
+          { "id": "m3-q14-b", "text": "As valuable diagnostic windows into their cognitive processing style" },
+          { "id": "m3-q14-c", "text": "As proof that the child cannot learn in mainstream institutions" },
+          { "id": "m3-q14-d", "text": "As mistakes that should be ignored entirely without intervention" }
+        ],
+        "correctOptionId": "m3-q14-b",
+        "explanation": "Errors reveal how students process information, guiding targeted instructional adaptations."
+      },
+      {
+        "id": "m3-q15",
+        "question": "The term 'Least Restrictive Environment' (LRE) mandates that students with disabilities should:",
+        "options": [
+          { "id": "m3-q15-a", "text": "Be placed permanently in specialized medical facilities" },
+          { "id": "m3-q15-b", "text": "Be educated alongside non-disabled peers to the maximum extent appropriate" },
+          { "id": "m3-q15-c", "text": "Only be allowed in schools during after-hours" },
+          { "id": "m3-q15-d", "text": "Be exempted from interaction with general education educators" }
+        ],
+        "correctOptionId": "m3-q15-b",
+        "explanation": "LRE principles require that students with special needs be educated with typically developing peers unless specialized accommodations necessitate alternative settings."
+      }
+    ]
+  },
+  {
+    "id": "mock-4",
+    "title": "Educational Assessment & Evaluation",
+    "description": "Master continuous comprehensive evaluation (CCE), rubrics, formative feedback, diagnostic testing, and cognitive taxonomies.",
+    "questions": [
+      {
+        "id": "m4-q1",
+        "question": "Continuous and Comprehensive Evaluation (CCE) primarily aims to:",
+        "options": [
+          { "id": "m4-q1-a", "text": "Conduct high-stakes examinations weekly to rank students" },
+          { "id": "m4-q1-b", "text": "Assess both scholastic and co-scholastic domains continuously to provide developmental feedback" },
+          { "id": "m4-q1-c", "text": "Segregate pupils strictly by intelligence quotients" },
+          { "id": "m4-q1-d", "text": "Reduce the school academic year to pure paper testing" }
+        ],
+        "correctOptionId": "m4-q1-b",
+        "explanation": "CCE broadens evaluation beyond memorized textbook facts to cultivate holistic scholastic and socio-emotional abilities throughout the academic cycle."
+      },
+      {
+        "id": "m4-q2",
+        "question": "Which of the following is an example of 'Assessment as Learning'?",
+        "options": [
+          { "id": "m4-q2-a", "text": "Final annual board examination results" },
+          { "id": "m4-q2-b", "text": "A student using a self-reflective rubric to critique and adjust their own project" },
+          { "id": "m4-q2-c", "text": "Teacher grading surprise quizzes for administrative ranking" },
+          { "id": "m4-q2-d", "text": "Government monitoring surveys" }
+        ],
+        "correctOptionId": "m4-q2-b",
+        "explanation": "Assessment as learning emphasizes student self-regulation, metacognition, and self-evaluation, turning the evaluation process itself into a learning activity."
+      },
+      {
+        "id": "m4-q3",
+        "question": "A diagnostic assessment is conducted primarily to:",
+        "options": [
+          { "id": "m4-q3-a", "text": "Assign semester final letter grades" },
+          { "id": "m4-q3-b", "text": "Identify specific learning gaps, misconceptions, and areas requiring remediation" },
+          { "id": "m4-q3-c", "text": "Determine which students receive cash scholarships" },
+          { "id": "m4-q3-d", "text": "Select students for inter-school sports competitions" }
+        ],
+        "correctOptionId": "m4-q3-b",
+        "explanation": "Diagnostic assessment acts like clinical testing: pinpointing root causes of learning difficulties prior to or during instructional interventions."
+      },
+      {
+        "id": "m4-q4",
+        "question": "In revised Bloom's Taxonomy (Anderson & Krathwohl), which cognitive process represents the highest tier of complexity?",
+        "options": [
+          { "id": "m4-q4-a", "text": "Remembering" },
+          { "id": "m4-q4-b", "text": "Analyzing" },
+          { "id": "m4-q4-c", "text": "Evaluating" },
+          { "id": "m4-q4-d", "text": "Creating" }
+        ],
+        "correctOptionId": "m4-q4-d",
+        "explanation": "The revised hierarchy scales from Remembering up through Understanding, Applying, Analyzing, Evaluating, to Creating at the apex."
+      },
+      {
+        "id": "m4-q5",
+        "question": "When an assessment measures consistently and produces dependable results across repeated trials, it is said to have high:",
+        "options": [
+          { "id": "m4-q5-a", "text": "Validity" },
+          { "id": "m4-q5-b", "text": "Reliability" },
+          { "id": "m4-q5-c", "text": "Subjectivity" },
+          { "id": "m4-q5-d", "text": "Usability" }
+        ],
+        "correctOptionId": "m4-q5-b",
+        "explanation": "Reliability denotes stability, consistency, and repeatability of test scores under identical or equivalent testing conditions."
+      },
+      {
+        "id": "m4-q6",
+        "question": "If an assessment measures accurately what it claims to measure, it demonstrates:",
+        "options": [
+          { "id": "m4-q6-a", "text": "Validity" },
+          { "id": "m4-q6-b", "text": "Reliability" },
+          { "id": "m4-q6-c", "text": "Speed" },
+          { "id": "m4-q6-d", "text": "Standardization" }
+        ],
+        "correctOptionId": "m4-q6-a",
+        "explanation": "Validity is the degree to which an instrument truthfully evaluates the exact construct or learning objective it was intended to assess."
+      },
+      {
+        "id": "m4-q7",
+        "question": "What is the key purpose of constructing a 'test blueprint' (table of specifications) before authoring a question paper?",
+        "options": [
+          { "id": "m4-q7-a", "text": "To ensure balanced weighting across topics, instructional objectives, and item types" },
+          { "id": "m4-q7-b", "text": "To decide how many students will be failed" },
+          { "id": "m4-q7-c", "text": "To calculate the price of paper printing" },
+          { "id": "m4-q7-d", "text": "To rank question items alphabetically" }
+        ],
+        "correctOptionId": "m4-q7-a",
+        "explanation": "A blueprint maps items systematically to cognitive levels (knowledge, application, analysis) and topical units to safeguard content validity."
+      },
+      {
+        "id": "m4-q8",
+        "question": "Criterion-referenced assessment differs from norm-referenced assessment because it:",
+        "options": [
+          { "id": "m4-q8-a", "text": "Compares an individual's score to the average percentile of a cohort" },
+          { "id": "m4-q8-b", "text": "Measures performance against predefined learning standards and mastery benchmarks" },
+          { "id": "m4-q8-c", "text": "Forces results into a normal bell-shaped curve" },
+          { "id": "m4-q8-d", "text": "Ranks students from first to last rank" }
+        ],
+        "correctOptionId": "m4-q8-b",
+        "explanation": "Criterion-referenced frameworks assess whether a learner has met absolute learning targets irrespective of other students' scores."
+      },
+      {
+        "id": "m4-q9",
+        "question": "A portfolio assessment is best described as:",
+        "options": [
+          { "id": "m4-q9-a", "text": "A timed two-hour multiple-choice test" },
+          { "id": "m4-q9-b", "text": "A purposeful, cumulative collection of student work demonstrating growth and achievement over time" },
+          { "id": "m4-q9-c", "text": "An administrative ledger recording teacher daily attendance" },
+          { "id": "m4-q9-d", "text": "A medical report submitted by clinical nurses" }
+        ],
+        "correctOptionId": "m4-q9-b",
+        "explanation": "Portfolios gather diverse artifacts (drafts, projects, self-reflections) illustrating student progress and effort across time."
+      },
+      {
+        "id": "m4-q10",
+        "question": "Which of the following describes effective pedagogical feedback?",
+        "options": [
+          { "id": "m4-q10-a", "text": "Single evaluative phrases like \"Good\" or \"Poor\" without explanation" },
+          { "id": "m4-q10-b", "text": "Timely, specific, descriptive comments highlighting strengths and concrete next steps" },
+          { "id": "m4-q10-c", "text": "Public reprimands highlighting mistakes in front of the entire assembly" },
+          { "id": "m4-q10-d", "text": "Feedback withheld until the end of the school year" }
+        ],
+        "correctOptionId": "m4-q10-b",
+        "explanation": "Formative feedback must be task-directed, timely, and actionable to help the learner close the gap between current performance and mastery."
+      },
+      {
+        "id": "m4-q11",
+        "question": "Anecdotal records maintained by primary school teachers serve to:",
+        "options": [
+          { "id": "m4-q11-a", "text": "Document specific factual narrative descriptions of critical child behaviors and social events" },
+          { "id": "m4-q11-b", "text": "Log student fees payments" },
+          { "id": "m4-q11-c", "text": "Calculate grade point averages mathematically" },
+          { "id": "m4-q11-d", "text": "Store past multiple-choice test papers" }
+        ],
+        "correctOptionId": "m4-q11-a",
+        "explanation": "Anecdotal notes are short objective qualitative accounts capturing spontaneous student behaviors, emotional reactions, and social dynamics."
+      },
+      {
+        "id": "m4-q12",
+        "question": "A rubric with separate explicit performance criteria scored independently across multiple performance indicators is a/an:",
+        "options": [
+          { "id": "m4-q12-a", "text": "Holistic rubric" },
+          { "id": "m4-q12-b", "text": "Analytic rubric" },
+          { "id": "m4-q12-c", "text": "Subjective tally" },
+          { "id": "m4-q12-d", "text": "Normative checklist" }
+        ],
+        "correctOptionId": "m4-q12-b",
+        "explanation": "Analytic rubrics break a task down into distinct dimensions (e.g., content, grammar, mechanics) and evaluate each criterion separately."
+      },
+      {
+        "id": "m4-q13",
+        "question": "What is the primary danger of grouping and labelling students into 'bright' and 'weak' batches?",
+        "options": [
+          { "id": "m4-q13-a", "text": "It speeds up classroom lecture delivery" },
+          { "id": "m4-q13-b", "text": "It induces self-fulfilling prophecies (Golem effect), diminishes self-concept, and impedes growth mindset" },
+          { "id": "m4-q13-c", "text": "It lowers the school's electricity bills" },
+          { "id": "m4-q13-d", "text": "It guarantees 100% participation in school sports" }
+        ],
+        "correctOptionId": "m4-q13-b",
+        "explanation": "Pejorative deficit labels institutionalize lower expectations, dampening student motivation and learning self-efficacy."
+      },
+      {
+        "id": "m4-q14",
+        "question": "Which of the following is considered an open-ended divergent assessment question?",
+        "options": [
+          { "id": "m4-q14-a", "text": "\"What is the boiling point of water at sea level?\"" },
+          { "id": "m4-q14-b", "text": "\"Who was the first Prime Minister of independent India?\"" },
+          { "id": "m4-q14-c", "text": "\"How would life on Earth change if all honeybee colonies disappeared? Justify your reasoning.\"" },
+          { "id": "m4-q14-d", "text": "\"State the chemical symbol for Sodium.\"" }
+        ],
+        "correctOptionId": "m4-q14-c",
+        "explanation": "The bee extinction question requires speculative hypothesis generation, ecological analysis, and multi-faceted justifications."
+      },
+      {
+        "id": "m4-q15",
+        "question": "Summative assessment is best characterized by which of the following temporal and functional descriptions?",
+        "options": [
+          { "id": "m4-q15-a", "text": "Conducted periodically during lessons to tweak real-time pedagogical tactics" },
+          { "id": "m4-q15-b", "text": "Administered at the end of a defined instructional term to summarize and certify overall attainment" },
+          { "id": "m4-q15-c", "text": "Conducted before term starts to diagnose physical defects" },
+          { "id": "m4-q15-d", "text": "Informal play-based unstructured peer conversations" }
+        ],
+        "correctOptionId": "m4-q15-b",
+        "explanation": "Summative assessments take stock of learning *after* instruction occurs to evaluate cumulative learning outcomes, certify, or grade."
+      }
+    ]
+  },
+  {
+    "id": "mock-5",
+    "title": "Educational Policies & Institutional Frameworks",
+    "description": "Understand National Education Policy (NEP) 2020, NCF-SE 2023, RTE Act 2009, and historical commissions.",
+    "questions": [
+      {
+        "id": "m5-q1",
+        "question": "What is the new pedagogical and curricular restructuring model recommended by NEP 2020 to replace the 10+2 system?",
+        "options": [
+          { "id": "m5-q1-a", "text": "5+3+3+4" },
+          { "id": "m5-q1-b", "text": "4+4+3+3" },
+          { "id": "m5-q1-c", "text": "3+3+4+4" },
+          { "id": "m5-q1-d", "text": "5+4+3+2" }
+        ],
+        "correctOptionId": "m5-q1-a",
+        "explanation": "NEP 2020 introduces the 5+3+3+4 structure covering Foundational (5 yrs), Preparatory (3 yrs), Middle (3 yrs), and Secondary (4 yrs) stages."
+      },
+      {
+        "id": "m5-q2",
+        "question": "Under the Right of Children to Free and Compulsory Education (RTE) Act 2009, what is the mandated Pupil-Teacher Ratio (PTR) for primary schools (Classes I–V)?",
+        "options": [
+          { "id": "m5-q2-a", "text": "30:1" },
+          { "id": "m5-q2-b", "text": "35:1" },
+          { "id": "m5-q2-c", "text": "40:1" },
+          { "id": "m5-q2-d", "text": "45:1" }
+        ],
+        "correctOptionId": "m5-q2-a",
+        "explanation": "The RTE Act 2009 sets a standard PTR of 30:1 for primary classes (up to 200 pupils) and 35:1 for upper primary schools."
+      },
+      {
+        "id": "m5-q3",
+        "question": "Section 17 of the RTE Act 2009 expressly prohibits:",
+        "options": [
+          { "id": "m5-q3-a", "text": "Conducting examinations" },
+          { "id": "m5-q3-b", "text": "Physical punishment and mental harassment of children" },
+          { "id": "m5-q3-c", "text": "Teaching in the regional mother tongue" },
+          { "id": "m5-q3-d", "text": "Organizing playground sports tournaments" }
+        ],
+        "correctOptionId": "m5-q3-b",
+        "explanation": "Section 17 makes corporal punishment and psychological harassment illegal and subject to disciplinary action."
+      },
+      {
+        "id": "m5-q4",
+        "question": "The National Curriculum Framework for Foundational Stage (NCF-FS) focuses on children in the age bracket of:",
+        "options": [
+          { "id": "m5-q4-a", "text": "0 to 3 years" },
+          { "id": "m5-q4-b", "text": "3 to 8 years" },
+          { "id": "m5-q4-c", "text": "6 to 14 years" },
+          { "id": "m5-q4-d", "text": "8 to 11 years" }
+        ],
+        "correctOptionId": "m5-q4-b",
+        "explanation": "The foundational stage under NEP 2020 covers ages 3 to 8, integrating three years of Anganwadi/Preschool and Grades 1 and 2."
+      },
+      {
+        "id": "m5-q5",
+        "question": "PARAKH, established under NEP 2020, stands for:",
+        "options": [
+          { "id": "m5-q5-a", "text": "Performance Assessment, Review, and Analysis of Knowledge for Holistic Development" },
+          { "id": "m5-q5-b", "text": "Program for Academic Research and Knowledge Harmonization" },
+          { "id": "m5-q5-c", "text": "Pedagogical Aptitude Review and Knowledge Hub" },
+          { "id": "m5-q5-d", "text": "Primary Action for Rural Academic Knowledge Hub" }
+        ],
+        "correctOptionId": "m5-q5-a",
+        "explanation": "PARAKH is set up as a standard-setting body under NCERT to guide student assessment norms across school boards."
+      },
+      {
+        "id": "m5-q6",
+        "question": "Which historic commission recommended the 'Three-Language Formula' in Indian secondary school education?",
+        "options": [
+          { "id": "m5-q6-a", "text": "Hunter Commission (1882)" },
+          { "id": "m5-q6-b", "text": "Kothari Commission (1964–66)" },
+          { "id": "m5-q6-c", "text": "Mudaliar Commission (1952–53)" },
+          { "id": "m5-q6-d", "text": "Radhakrishnan Commission (1948–49)" }
+        ],
+        "correctOptionId": "m5-q6-b",
+        "explanation": "The Kothari Commission devised the Three-Language Formula to support mother tongue literacy alongside national and modern languages."
+      },
+      {
+        "id": "m5-q7",
+        "question": "The Wardha Scheme of Basic Education (Nai Talim, 1937) conceived by Mahatma Gandhi emphasized:",
+        "options": [
+          { "id": "m5-q7-a", "text": "Learning purely theoretical classical grammar" },
+          { "id": "m5-q7-b", "text": "Craft-centered, productive manual labor integrated with academic subjects in mother tongue" },
+          { "id": "m5-q7-c", "text": "Instruction carried out entirely in English" },
+          { "id": "m5-q7-d", "text": "Strict militaristic drills without academic teaching" }
+        ],
+        "correctOptionId": "m5-q7-b",
+        "explanation": "Nai Talim linked education with productive craft-centered work (such as spinning and weaving) to foster self-sufficiency and dignity of labor."
+      },
+      {
+        "id": "m5-q8",
+        "question": "What is the primary target of the NIPUN Bharat Mission launched by the Ministry of Education?",
+        "options": [
+          { "id": "m5-q8-a", "text": "Achieving universal Foundational Literacy and Numeracy (FLN) by Grade 3" },
+          { "id": "m5-q8-b", "text": "Distributing free laptops to all university professors" },
+          { "id": "m5-q8-c", "text": "Setting up space research observatories in secondary schools" },
+          { "id": "m5-q8-d", "text": "Enrolling all primary teachers in military service" }
+        ],
+        "correctOptionId": "m5-q8-a",
+        "explanation": "NIPUN Bharat ensures every child in the country achieves reading with comprehension and foundational numeracy by the end of Grade 3."
+      },
+      {
+        "id": "m5-q9",
+        "question": "Article 21A of the Constitution of India guarantees:",
+        "options": [
+          { "id": "m5-q9-a", "text": "Right to tertiary university education at subsidized rates" },
+          { "id": "m5-q9-b", "text": "Free and compulsory education to all children aged 6 to 14 years as a Fundamental Right" },
+          { "id": "m5-q9-c", "text": "Protection of historical monuments" },
+          { "id": "m5-q9-d", "text": "Freedom of international trade" }
+        ],
+        "correctOptionId": "m5-q9-b",
+        "explanation": "The 86th Constitutional Amendment Act (2002) inserted Article 21A, establishing free and compulsory schooling (ages 6–14) as a fundamental right."
+      },
+      {
+        "id": "m5-q10",
+        "question": "According to the RTE Act 2009, what percentage of seats in private unaided schools must be reserved for children from disadvantaged groups and weaker sections?",
+        "options": [
+          { "id": "m5-q10-a", "text": "10%" },
+          { "id": "m5-q10-b", "text": "25%" },
+          { "id": "m5-q10-c", "text": "33%" },
+          { "id": "m5-q10-d", "text": "50%" }
+        ],
+        "correctOptionId": "m5-q10-b",
+        "explanation": "Section 12(1)(c) of the RTE Act mandates a minimum 25% reservation in entry-level classes for children from socio-economically weaker and disadvantaged backgrounds."
+      },
+      {
+        "id": "m5-q11",
+        "question": "Which body is the apex academic authority responsible for developing National Curriculum Frameworks (NCFs) in India?",
+        "options": [
+          { "id": "m5-q11-a", "text": "UGC" },
+          { "id": "m5-q11-b", "text": "NCERT" },
+          { "id": "m5-q11-c", "text": "NCTE" },
+          { "id": "m5-q11-d", "text": "AICTE" }
+        ],
+        "correctOptionId": "m5-q11-b",
+        "explanation": "The National Council of Educational Research and Training (NCERT) serves as the nodal body designing school curricula and pedagogical guidelines."
+      },
+      {
+        "id": "m5-q12",
+        "question": "The DIKSHA platform operates under the Ministry of Education as a national portal for:",
+        "options": [
+          { "id": "m5-q12-a", "text": "Digital infrastructure providing high-quality open learning resources and e-content" },
+          { "id": "m5-q12-b", "text": "Filing school income tax returns" },
+          { "id": "m5-q12-c", "text": "Issuing student passports" },
+          { "id": "m5-q12-d", "text": "Managing school bus transport navigation" }
+        ],
+        "correctOptionId": "m5-q12-a",
+        "explanation": "DIKSHA is a national digital platform offering digital textbooks, interactive lesson plans, and teacher training courses."
+      },
+      {
+        "id": "m5-q13",
+        "question": "In the National Education Policy 2020, mother tongue or regional language instruction is strongly advocated at least until:",
+        "options": [
+          { "id": "m5-q13-a", "text": "Grade 2" },
+          { "id": "m5-q13-b", "text": "Grade 5 (and preferably until Grade 8 and beyond)" },
+          { "id": "m5-q13-c", "text": "Grade 10" },
+          { "id": "m5-q13-d", "text": "University graduation" }
+        ],
+        "correctOptionId": "m5-q13-b",
+        "explanation": "NEP 2020 emphasizes that wherever possible, the medium of instruction until Grade 5—and preferably up to Grade 8—should be the home language/mother tongue."
+      },
+      {
+        "id": "m5-q14",
+        "question": "Macaulay's Minute of 1835 in colonial India favored:",
+        "options": [
+          { "id": "m5-q14-a", "text": "Reviving Sanskrit and Arabic indigenous gurukuls" },
+          { "id": "m5-q14-b", "text": "English medium education to produce an Anglicized clerical administrative class" },
+          { "id": "m5-q14-c", "text": "Universal free education for all farming communities" },
+          { "id": "m5-q14-d", "text": "Banning English texts in all provinces" }
+        ],
+        "correctOptionId": "m5-q14-b",
+        "explanation": "Thomas Macaulay advocated establishing a class 'Indian in blood and colour, but English in taste, opinions, morals and intellect' to staff the colonial civil apparatus."
+      },
+      {
+        "id": "m5-q15",
+        "question": "Wood's Despatch of 1854 is historically revered as the:",
+        "options": [
+          { "id": "m5-q15-a", "text": "Magna Carta of English Education in India" },
+          { "id": "m5-q15-b", "text": "Vernacular Press charter" },
+          { "id": "m5-q15-c", "text": "Charter of Medical Research" },
+          { "id": "m5-q15-d", "text": "Directive of Religious Monasteries" }
+        ],
+        "correctOptionId": "m5-q15-a",
+        "explanation": "Charles Wood's Despatch (1854) formalized an articulated system of primary, secondary, and collegiate education throughout British India."
+      }
+    ]
+  },
+  {
+    "id": "mock-6",
+    "title": "Language Pedagogy & ELT Methodology",
+    "description": "Assess core English Language Teaching methods, reading/listening skills, phonetics, grammar, and communicative approaches.",
+    "questions": [
+      {
+        "id": "m6-q1",
+        "question": "Which of the following pairings correctly groups the four basic language skills into 'Productive' (Expressive) skills?",
+        "options": [
+          { "id": "m6-q1-a", "text": "Listening and Reading" },
+          { "id": "m6-q1-b", "text": "Speaking and Writing" },
+          { "id": "m6-q1-c", "text": "Reading and Speaking" },
+          { "id": "m6-q1-d", "text": "Listening and Writing" }
+        ],
+        "correctOptionId": "m6-q1-b",
+        "explanation": "Speaking and writing require active production and linguistic output, while listening and reading are receptive input skills."
+      },
+      {
+        "id": "m6-q2",
+        "question": "The Direct Method of English Language Teaching is distinguished by:",
+        "options": [
+          { "id": "m6-q2-a", "text": "Heavy translation of literature into the mother tongue" },
+          { "id": "m6-q2-b", "text": "Banning native language use and teaching directly through the target language" },
+          { "id": "m6-q2-c", "text": "Memorizing grammatical tables by rote before speaking" },
+          { "id": "m6-q2-d", "text": "Silent reading without oral pronunciation practice" }
+        ],
+        "correctOptionId": "m6-q2-b",
+        "explanation": "The Direct (Natural) Method forbids native language translation, using visual demonstration and direct target-language immersion instead."
+      },
+      {
+        "id": "m6-q3",
+        "question": "A student rapidly runs their eyes over an English newspaper passage to find a specific date or name. This reading technique is known as:",
+        "options": [
+          { "id": "m6-q3-a", "text": "Skimming" },
+          { "id": "m6-q3-b", "text": "Scanning" },
+          { "id": "m6-q3-c", "text": "Intensive reading" },
+          { "id": "m6-q3-d", "text": "Critical discourse analysis" }
+        ],
+        "correctOptionId": "m6-q3-b",
+        "explanation": "Scanning involves searching quickly through text to locate a specific keyword, number, or datum."
+      },
+      {
+        "id": "m6-q4",
+        "question": "Reading for overall general understanding and gist without getting bogged down by individual vocabulary details is:",
+        "options": [
+          { "id": "m6-q4-a", "text": "Skimming" },
+          { "id": "m6-q4-b", "text": "Scanning" },
+          { "id": "m6-q4-c", "text": "Phonemic parsing" },
+          { "id": "m6-q4-d", "text": "Transcription" }
+        ],
+        "correctOptionId": "m6-q4-a",
+        "explanation": "Skimming involves quickly reading the surface of a text to grasp the main concept, central theme, or general gist."
+      },
+      {
+        "id": "m6-q5",
+        "question": "The Grammar-Translation Method (GTM) focuses primarily on developing which two skills?",
+        "options": [
+          { "id": "m6-q5-a", "text": "Listening and Speaking" },
+          { "id": "m6-q5-b", "text": "Reading and Writing" },
+          { "id": "m6-q5-c", "text": "Pronunciation and Debate" },
+          { "id": "m6-q5-d", "text": "Spontaneous dialogue and Drama" }
+        ],
+        "correctOptionId": "m6-q5-b",
+        "explanation": "GTM focuses on reading foreign classical literature and writing translations, leaving oral communicative fluency underdeveloped."
+      },
+      {
+        "id": "m6-q6",
+        "question": "A phoneme is defined as the:",
+        "options": [
+          { "id": "m6-q6-a", "text": "Smallest unit of meaning in a language" },
+          { "id": "m6-q6-b", "text": "Smallest distinctive unit of sound in a spoken language" },
+          { "id": "m6-q6-c", "text": "Complete syntactical clause structure" },
+          { "id": "m6-q6-d", "text": "Etymological history of a root word" }
+        ],
+        "correctOptionId": "m6-q6-b",
+        "explanation": "A phoneme is the smallest segmental unit of speech sound used to distinguish one word from another (e.g., /p/ vs /b/ in 'pat' and 'bat')."
+      },
+      {
+        "id": "m6-q7",
+        "question": "What is the smallest grammatical unit of meaning in linguistic analysis?",
+        "options": [
+          { "id": "m6-q7-a", "text": "Phoneme" },
+          { "id": "m6-q7-b", "text": "Morpheme" },
+          { "id": "m6-q7-c", "text": "Grapheme" },
+          { "id": "m6-q7-d", "text": "Syntax" }
+        ],
+        "correctOptionId": "m6-q7-b",
+        "explanation": "A morpheme is the smallest meaningful morphological unit (e.g., 'un-', 'break', '-able')."
+      },
+      {
+        "id": "m6-q8",
+        "question": "In the Communicative Language Teaching (CLT) approach, errors in speech should be viewed by the teacher as:",
+        "options": [
+          { "id": "m6-q8-a", "text": "Unforgivable behavioral failures subject to immediate interruption and correction" },
+          { "id": "m6-q8-b", "text": "A natural, healthy part of the language acquisition and hypothesis-testing process" },
+          { "id": "m6-q8-c", "text": "Definitive evidence of low intelligence" },
+          { "id": "m6-q8-d", "text": "Violations that must be penalized with mark reductions" }
+        ],
+        "correctOptionId": "m6-q8-b",
+        "explanation": "CLT prioritizes communicative fluency and natural expression, treating mistakes as developmental steps in interlanguage development."
+      },
+      {
+        "id": "m6-q9",
+        "question": "Which method teaches reading by starting with letter-sound correspondences before blending into full words?",
+        "options": [
+          { "id": "m6-q9-a", "text": "Whole Language method" },
+          { "id": "m6-q9-b", "text": "Phonics method" },
+          { "id": "m6-q9-c", "text": "Look-and-Say method" },
+          { "id": "m6-q9-d", "text": "Kallan method" }
+        ],
+        "correctOptionId": "m6-q9-b",
+        "explanation": "Phonics instructs readers to decode written symbols into their associated phonetic sounds and blend them systematically."
+      },
+      {
+        "id": "m6-q10",
+        "question": "Language acquisition differs from language learning in that acquisition is:",
+        "options": [
+          { "id": "m6-q10-a", "text": "A subconscious, natural process occurring through meaningful exposure in real-life contexts" },
+          { "id": "m6-q10-b", "text": "A formal, rule-memorizing effort inside grammar classrooms" },
+          { "id": "m6-q10-c", "text": "Dependent solely on passing written tests" },
+          { "id": "m6-q10-d", "text": "Carried out through electronic calculators" }
+        ],
+        "correctOptionId": "m6-q10-a",
+        "explanation": "Stephen Krashen distinguished implicit, natural acquisition (like first language development) from conscious, explicit formal learning."
+      },
+      {
+        "id": "m6-q11",
+        "question": "Which activity is LEAST effective for cultivating spontaneous spoken English fluency in upper-primary students?",
+        "options": [
+          { "id": "m6-q11-a", "text": "Role plays and improvisational simulations" },
+          { "id": "m6-q11-b", "text": "Classroom debates on real-world topics" },
+          { "id": "m6-q11-c", "text": "Transcribing textbook passages into notebooks silently" },
+          { "id": "m6-q11-d", "text": "Storytelling and personal show-and-tell sessions" }
+        ],
+        "correctOptionId": "m6-q11-c",
+        "explanation": "Silent manual transcription develops mechanical handwriting or spelling drill, not spontaneous verbal fluency."
+      },
+      {
+        "id": "m6-q12",
+        "question": "A teacher teaches grammar by first presenting a series of contextual examples and guiding students to infer the grammatical rule themselves. This approach is:",
+        "options": [
+          { "id": "m6-q12-a", "text": "Deductive grammar teaching" },
+          { "id": "m6-q12-b", "text": "Inductive grammar teaching" },
+          { "id": "m6-q12-c", "text": "Prescriptive syntax drill" },
+          { "id": "m6-q12-d", "text": "Audiolingual rote repetition" }
+        ],
+        "correctOptionId": "m6-q12-b",
+        "explanation": "Inductive learning starts with contextual examples, guiding students to notice patterns and discover underlying rules themselves."
+      },
+      {
+        "id": "m6-q13",
+        "question": "What is the recommended natural order of imparting four foundational language skills to young learners?",
+        "options": [
+          { "id": "m6-q13-a", "text": "Reading -> Writing -> Listening -> Speaking" },
+          { "id": "m6-q13-b", "text": "Listening -> Speaking -> Reading -> Writing (LSRW)" },
+          { "id": "m6-q13-c", "text": "Writing -> Reading -> Speaking -> Listening" },
+          { "id": "m6-q13-d", "text": "Speaking -> Reading -> Writing -> Listening" }
+        ],
+        "correctOptionId": "m6-q13-b",
+        "explanation": "LSRW (Listening, Speaking, Reading, Writing) reflects the natural progression of first and second language development."
+      },
+      {
+        "id": "m6-q14",
+        "question": "In English Language Teaching, 'BICS' and 'CALP' were conceptualized by Jim Cummins. BICS refers to:",
+        "options": [
+          { "id": "m6-q14-a", "text": "Basic Interpersonal Communicative Skills" },
+          { "id": "m6-q14-b", "text": "Bilingual Integrated Cognitive Program" },
+          { "id": "m6-q14-c", "text": "Broad Instruction of Content Semantics" },
+          { "id": "m6-q14-d", "text": "Basic Instructional Curriculum Standards" }
+        ],
+        "correctOptionId": "m6-q14-a",
+        "explanation": "BICS refers to everyday conversational fluency used in social interactions, distinct from academic language proficiency (CALP)."
+      },
+      {
+        "id": "m6-q15",
+        "question": "An English teacher uses graded readers slightly above the current linguistic level of the class. This directly applies Stephen Krashen's hypothesis of:",
+        "options": [
+          { "id": "m6-q15-a", "text": "Comprehensive Output" },
+          { "id": "m6-q15-b", "text": "Comprehensible Input ($i + 1$)" },
+          { "id": "m6-q15-c", "text": "The Affective Barrier hypothesis" },
+          { "id": "m6-q15-d", "text": "The Strict Monitor Model" }
+        ],
+        "correctOptionId": "m6-q15-b",
+        "explanation": "The Comprehensible Input hypothesis ($i + 1$) states that language acquisition occurs when learners encounter input just one step beyond their current level."
+      }
+    ]
+  },
+  {
+    "id": "mock-7",
+    "title": "Mathematics Pedagogy & Problem-Solving Strategies",
+    "description": "Evaluate methods of mathematical reasoning, pedagogical content knowledge (PCK), numeracy foundations, and diagnostic remediation.",
+    "questions": [
+      {
+        "id": "m7-q1",
+        "question": "According to the National Curriculum Framework, the primary goal of school mathematics education is the:",
+        "options": [
+          { "id": "m7-q1-a", "text": "Memorization of arithmetic tables up to 100" },
+          { "id": "m7-q1-b", "text": "Mathematization of the child's thought processes and reasoning abilities" },
+          { "id": "m7-q1-c", "text": "Preparation for commercial banking examinations exclusively" },
+          { "id": "m7-q1-d", "text": "Mechanical mastery of computational shortcuts without conceptual basis" }
+        ],
+        "correctOptionId": "m7-q1-b",
+        "explanation": "NCF emphasizes that the core goal of school mathematics is developing logical thinking, abstraction, and problem-solving habits."
+      },
+      {
+        "id": "m7-q2",
+        "question": "In the Van Hiele model of geometric thought, which stage is characterized by recognizing geometric shapes strictly by their overall holistic appearance?",
+        "options": [
+          { "id": "m7-q2-a", "text": "Level 0: Visualization / Recognition" },
+          { "id": "m7-q2-b", "text": "Level 1: Analysis" },
+          { "id": "m7-q2-c", "text": "Level 2: Informal Deduction / Abstraction" },
+          { "id": "m7-q2-d", "text": "Level 3: Formal Deduction" }
+        ],
+        "correctOptionId": "m7-q2-a",
+        "explanation": "At Level 0 (Visualization), children identify shapes by visual appearance alone (e.g., 'it's a rectangle because it looks like a door')."
+      },
+      {
+        "id": "m7-q3",
+        "question": "A child calculates $43 - 27$ as follows: $3 - 7 = 4$, then $4 - 2 = 2$, obtaining $24$. What is the child's mathematical misconception?",
+        "options": [
+          { "id": "m7-q3-a", "text": "Inability to perform addition" },
+          { "id": "m7-q3-b", "text": "Subtracting the smaller digit from the larger digit regardless of place value column rules" },
+          { "id": "m7-q3-c", "text": "Complete lack of fine motor grip" },
+          { "id": "m7-q3-d", "text": "Confusion between multiplication and subtraction symbols" }
+        ],
+        "correctOptionId": "m7-q3-b",
+        "explanation": "The child subtracts smaller digits from larger ones to avoid regrouping, signaling a conceptual gap in place-value borrowing."
+      },
+      {
+        "id": "m7-q4",
+        "question": "Which manipulative tool is most effective for demonstrating decimal place values and regrouping concretely to primary grade students?",
+        "options": [
+          { "id": "m7-q4-a", "text": "Base-Ten Dienes Blocks" },
+          { "id": "m7-q4-b", "text": "Clinometer" },
+          { "id": "m7-q4-c", "text": "Protractor" },
+          { "id": "m7-q4-d", "text": "T-square" }
+        ],
+        "correctOptionId": "m7-q4-a",
+        "explanation": "Dienes blocks use units, rods, flats, and cubes to visually represent ones, tens, hundreds, and thousands, simplifying place value."
+      },
+      {
+        "id": "m7-q5",
+        "question": "A Geoboard is an instructional aid specifically useful for teaching concepts of:",
+        "options": [
+          { "id": "m7-q5-a", "text": "Geometric shapes, perimeter, and area" },
+          { "id": "m7-q5-b", "text": "Probability and permutation combinations" },
+          { "id": "m7-q5-c", "text": "Long division algorithms" },
+          { "id": "m7-q5-d", "text": "Fractional logarithms" }
+        ],
+        "correctOptionId": "m7-q5-a",
+        "explanation": "Geoboards use pegged boards and elastic bands to explore 2D geometry, symmetry, perimeter, and relative area."
+      },
+      {
+        "id": "m7-q6",
+        "question": "According to George Pólya, what are the four sequential stages in mathematical problem solving?",
+        "options": [
+          { "id": "m7-q6-a", "text": "Understand the problem -> Devise a plan -> Carry out the plan -> Look back (reflect)" },
+          { "id": "m7-q6-b", "text": "Read fast -> Calculate -> Grade -> Move to next question" },
+          { "id": "m7-q6-c", "text": "Guess formula -> Compute -> Check textbook -> Memorize" },
+          { "id": "m7-q6-d", "text": "Devise plan -> Understand -> Verify -> Repeat" }
+        ],
+        "correctOptionId": "m7-q6-a",
+        "explanation": "Pólya's classic framework involves understanding the problem, planning an approach, executing calculations, and evaluating the solution."
+      },
+      {
+        "id": "m7-q7",
+        "question": "The inductive method in mathematics teaching moves from:",
+        "options": [
+          { "id": "m7-q7-a", "text": "Abstract rule to concrete verification examples" },
+          { "id": "m7-q7-b", "text": "Specific concrete examples and patterns to general formulas" },
+          { "id": "m7-q7-c", "text": "Complex theories to simple drills" },
+          { "id": "m7-q7-d", "text": "Memorized equations to algebraic definitions" }
+        ],
+        "correctOptionId": "m7-q7-b",
+        "explanation": "Inductive mathematics builds confidence by moving from familiar concrete examples to general formulas."
+      },
+      {
+        "id": "m7-q8",
+        "question": "The deductive method in mathematics instruction is primarily characterized by:",
+        "options": [
+          { "id": "m7-q8-a", "text": "Beginning with established axioms, theorems, or formulas and applying them to solve problems" },
+          { "id": "m7-q8-b", "text": "Laboratory discovery using soil measurements" },
+          { "id": "m7-q8-c", "text": "Guesswork without formal principles" },
+          { "id": "m7-q8-d", "text": "Physical movement games exclusively" }
+        ],
+        "correctOptionId": "m7-q8-a",
+        "explanation": "Deductive instruction starts with general rules and applies them systematically to solve specific practice problems."
+      },
+      {
+        "id": "m7-q9",
+        "question": "A primary student confuses the symbols '$>$' and '$<$'. What pedagogical strategy is most beneficial?",
+        "options": [
+          { "id": "m7-q9-a", "text": "Punishing the child with repeated detention" },
+          { "id": "m7-q9-b", "text": "Using concrete number line comparisons and visual balance metaphors" },
+          { "id": "m7-q9-c", "text": "Exempting the student from future mathematics classes" },
+          { "id": "m7-q9-d", "text": "Advising the student to choose random symbols during exams" }
+        ],
+        "correctOptionId": "m7-q9-b",
+        "explanation": "Visual models (number lines, dot comparisons, balance scales) help students understand inequality signs conceptually."
+      },
+      {
+        "id": "m7-q10",
+        "question": "Which of the following is considered an open-ended mathematical task?",
+        "options": [
+          { "id": "m7-q10-a", "text": "\"Calculate $25 \\times 4$.\"" },
+          { "id": "m7-q10-b", "text": "\"Find the area of a rectangle with length 8 cm and width 5 cm.\"" },
+          { "id": "m7-q10-c", "text": "\"A garden has an area of 36 square meters. What could its possible dimensions and perimeter be?\"" },
+          { "id": "m7-q10-d", "text": "\"State the value of $\\pi$ to two decimal places.\"" }
+        ],
+        "correctOptionId": "m7-q10-c",
+        "explanation": "The garden area prompt allows multiple valid dimension pairs ($6\\times6$, $9\\times4$, $12\\times3$, etc.) and encourages mathematical exploration."
+      },
+      {
+        "id": "m7-q11",
+        "question": "The concept of 'subitizing' in early childhood numeracy refers to:",
+        "options": [
+          { "id": "m7-q11-a", "text": "Rapidly recognizing the number of items in a small collection without counting one-by-one" },
+          { "id": "m7-q11-b", "text": "Performing long polynomial divisions" },
+          { "id": "m7-q11-c", "text": "Converting fractions to percentages mechanically" },
+          { "id": "m7-q11-d", "text": "Drawing complex geometric 3D figures" }
+        ],
+        "correctOptionId": "m7-q11-a",
+        "explanation": "Subitizing is instantly perceiving the quantity of small item groups (e.g., recognizing dots on dice) without counting them individually."
+      },
+      {
+        "id": "m7-q12",
+        "question": "Which cognitive error explains why young children often assert that a row of 5 spaced-out coins has 'more coins' than 5 compressed coins?",
+        "options": [
+          { "id": "m7-q12-a", "text": "Lack of the conservation of number and centration on physical spatial length" },
+          { "id": "m7-q12-b", "text": "Complete color blindness" },
+          { "id": "m7-q12-c", "text": "Inability to focus their eyesight" },
+          { "id": "m7-q12-d", "text": "Hearing impairment" }
+        ],
+        "correctOptionId": "m7-q12-a",
+        "explanation": "Piaget showed that preoperational children center on visual length rather than quantity due to undeveloped number conservation."
+      },
+      {
+        "id": "m7-q13",
+        "question": "Formative assessment in mathematics should focus primarily on:",
+        "options": [
+          { "id": "m7-q13-a", "text": "Classroom test speed over conceptual accuracy" },
+          { "id": "m7-q13-b", "text": "Understanding student reasoning processes, conceptual patterns, and remediation paths" },
+          { "id": "m7-q13-c", "text": "Calculating final letter grades" },
+          { "id": "m7-q13-d", "text": "Rewarding only students who finish first" }
+        ],
+        "correctOptionId": "m7-q13-b",
+        "explanation": "Formative math assessment targets reasoning pathways and underlying logic, guiding immediate instructional adjustments."
+      },
+      {
+        "id": "m7-q14",
+        "question": "Tangrams are ancient mathematical puzzles used effectively in primary schools to develop:",
+        "options": [
+          { "id": "m7-q14-a", "text": "Spatial sense, geometric decomposition, and shape transformation skills" },
+          { "id": "m7-q14-b", "text": "Quadratic roots calculation" },
+          { "id": "m7-q14-c", "text": "Logarithmic table reading" },
+          { "id": "m7-q14-d", "text": "Differential equations" }
+        ],
+        "correctOptionId": "m7-q14-a",
+        "explanation": "Tangram dissection puzzles foster spatial awareness, spatial rotation, and intuition regarding 2D geometric relationships."
+      },
+      {
+        "id": "m7-q15",
+        "question": "An algorithm in mathematics is best explained to students as a/an:",
+        "options": [
+          { "id": "m7-q15-a", "text": "Unrelated philosophical quote" },
+          { "id": "m7-q15-b", "text": "Step-by-step logical, unambiguous procedure for solving a specific class of problems" },
+          { "id": "m7-q15-c", "text": "Random guessing strategy used when unsure" },
+          { "id": "m7-q15-d", "text": "Artistic drawing style" }
+        ],
+        "correctOptionId": "m7-q15-b",
+        "explanation": "An algorithm provides a systematic, sequential procedure that reliably computes solutions for specific problem types."
+      }
+    ]
+  },
+  {
+    "id": "mock-8",
+    "title": "Environmental Studies & Science Pedagogy",
+    "description": "Examine constructivist science methods, experiential EVS inquiry, sustainability concepts, and experimental pedagogy.",
+    "questions": [
+      {
+        "id": "m8-q1",
+        "question": "According to the NCF, Environmental Studies (EVS) at the primary stage (Classes III–V) integrates which three core domains?",
+        "options": [
+          { "id": "m8-q1-a", "text": "Science, Social Studies, and Environmental Education" },
+          { "id": "m8-q1-b", "text": "Physics, Chemistry, and Botany" },
+          { "id": "m8-q1-c", "text": "History, Political Science, and Advanced Economics" },
+          { "id": "m8-q1-d", "text": "Mathematics, Fine Arts, and Physical Drill" }
+        ],
+        "correctOptionId": "m8-q1-a",
+        "explanation": "EVS adopts an integrated perspective synthesizing Science, Social Studies, and Environmental Education."
+      },
+      {
+        "id": "m8-q2",
+        "question": "The primary objective of organizing an outdoor field visit to a local wetland or forest in EVS is to:",
+        "options": [
+          { "id": "m8-q2-a", "text": "Provide direct hands-on sensory observation and connect classroom theory to real-world ecosystems" },
+          { "id": "m8-q2-b", "text": "Exhaust students so they remain quiet in subsequent lectures" },
+          { "id": "m8-q2-c", "text": "Fulfill administrative bureaucratic tour requirements without academic prep" },
+          { "id": "m8-q2-d", "text": "Replace all future textbook study entirely" }
+        ],
+        "correctOptionId": "m8-q2-a",
+        "explanation": "Experiential field study links textbook concepts to living ecological habitats through direct sensory observation."
+      },
+      {
+        "id": "m8-q3",
+        "question": "In the '5E Instructional Model' of inquiry-based science teaching, what is the correct sequence of phases?",
+        "options": [
+          { "id": "m8-q3-a", "text": "Engage -> Explore -> Explain -> Elaborate -> Evaluate" },
+          { "id": "m8-q3-b", "text": "Explain -> Engage -> Evaluate -> Explore -> Elaborate" },
+          { "id": "m8-q3-c", "text": "Evaluate -> Explore -> Engage -> Elaborate -> Explain" },
+          { "id": "m8-q3-d", "text": "Explore -> Explain -> Engage -> Evaluate -> Elaborate" }
+        ],
+        "correctOptionId": "m8-q3-a",
+        "explanation": "The 5E model guides learning through Engage, Explore, Explain, Elaborate, and Evaluate."
+      },
+      {
+        "id": "m8-q4",
+        "question": "Which method is most suited for teaching primary school students about seed germination?",
+        "options": [
+          { "id": "m8-q4-a", "text": "Dictating a 500-word essay from the chalkboard" },
+          { "id": "m8-q4-b", "text": "Having each student sprout soaked seeds in moist cotton and record daily observational logs" },
+          { "id": "m8-q4-c", "text": "Showing a static black-and-white diagram on page 42" },
+          { "id": "m8-q4-d", "text": "Administering a sudden written surprise test" }
+        ],
+        "correctOptionId": "m8-q4-b",
+        "explanation": "Hands-on biological cultivation engages students through longitudinal observation, measurement, and scientific inquiry."
+      },
+      {
+        "id": "m8-q5",
+        "question": "Which of the following represents an anthropocentric environmental misconception common among elementary learners?",
+        "options": [
+          { "id": "m8-q5-a", "text": "\"Plants and animals exist exclusively to serve human beings and meet our utility needs.\"" },
+          { "id": "m8-q5-b", "text": "\"Ecosystems involve interconnected predator-prey food webs.\"" },
+          { "id": "m8-q5-c", "text": "\"Forest fires alter local soil mineral concentrations.\"" },
+          { "id": "m8-q5-d", "text": "\"Water vapor condenses to form clouds in the troposphere.\"" }
+        ],
+        "correctOptionId": "m8-q5-a",
+        "explanation": "Anthropocentrism assumes human primacy, viewing nature through the lens of human consumption rather than ecological interdependence."
+      },
+      {
+        "id": "m8-q6",
+        "question": "When teaching water conservation, which student-led activity yields the deepest civic engagement?",
+        "options": [
+          { "id": "m8-q6-a", "text": "Conducting a school water audit to identify leaking taps and formulating conservation proposals" },
+          { "id": "m8-q6-b", "text": "Memorizing chemical formulas of hydrogen and oxygen" },
+          { "id": "m8-q6-c", "text": "Reciting a rhyming poem about clouds once" },
+          { "id": "m8-q6-d", "text": "Drawing a single water droplet on plain paper" }
+        ],
+        "correctOptionId": "m8-q6-a",
+        "explanation": "Water auditing combines practical inquiry, civic responsibility, and mathematical data collection to address sustainability."
+      },
+      {
+        "id": "m8-q7",
+        "question": "Which of the following topics in Environmental Studies belongs under the NCF thematic category of 'Shelter'?",
+        "options": [
+          { "id": "m8-q7-a", "text": "Diverse architectural designs adapting to varying geographic climates (e.g., stilt houses in flood-prone Assam)" },
+          { "id": "m8-q7-b", "text": "Caloric nutrition of leafy greens" },
+          { "id": "m8-q7-c", "text": "Purification methods of mineral water" },
+          { "id": "m8-q7-d", "text": "Speed calculation of electric locomotives" }
+        ],
+        "correctOptionId": "m8-q7-a",
+        "explanation": "EVS themes include Family, Food, Shelter, Water, Travel, and Things We Make and Do. Regional stilt architecture exemplifies the 'Shelter' theme."
+      },
+      {
+        "id": "m8-q8",
+        "question": "Scientific temper in children is best nurtured by:",
+        "options": [
+          { "id": "m8-q8-a", "text": "Discouraging questions that challenge classroom authority" },
+          { "id": "m8-q8-b", "text": "Encouraging questioning, evidence-based reasoning, and open-minded inquiry" },
+          { "id": "m8-q8-c", "text": "Accepting traditional superstitions uncritically" },
+          { "id": "m8-q8-d", "text": "Focusing solely on memorizing textbook definitions" }
+        ],
+        "correctOptionId": "m8-q8-b",
+        "explanation": "Article 51A(h) and constructivist science pedagogy emphasize developing scientific temper through empirical observation and critical skepticism."
+      },
+      {
+        "id": "m8-q9",
+        "question": "A teacher asks: \"What would happen to our local river if all industrial waste effluents were dumped into it untreated?\" This prompt aims to develop:",
+        "options": [
+          { "id": "m8-q9-a", "text": "Hypothetical predictive reasoning and environmental impact awareness" },
+          { "id": "m8-q9-b", "text": "Rote algorithmic calculation" },
+          { "id": "m8-q9-c", "text": "Mechanical drawing speed" },
+          { "id": "m8-q9-d", "text": "Spelling proficiency" }
+        ],
+        "correctOptionId": "m8-q9-a",
+        "explanation": "Predictive scenario prompts encourage systemic ecological reasoning, cause-and-effect thinking, and ethical awareness."
+      },
+      {
+        "id": "m8-q10",
+        "question": "Which of the following is a non-formal channel for environmental education?",
+        "options": [
+          { "id": "m8-q10-a", "text": "Prescribed syllabus examination papers in Grade X" },
+          { "id": "m8-q10-b", "text": "Community Eco-clubs, nature camps, and student-led tree-planting drives" },
+          { "id": "m8-q10-c", "text": "University graduation convocation lectures" },
+          { "id": "m8-q10-d", "text": "Mandatory classroom unit tests" }
+        ],
+        "correctOptionId": "m8-q10-b",
+        "explanation": "Eco-clubs and community workshops provide participatory, non-formal environmental learning beyond rigid curricular boundaries."
+      },
+      {
+        "id": "m8-q11",
+        "question": "The primary role of formative assessment in teaching primary science is to:",
+        "options": [
+          { "id": "m8-q11-a", "text": "Diagnose misconceptions and guide hands-on adjustments" },
+          { "id": "m8-q11-b", "text": "Rank children for scholarship honors" },
+          { "id": "m8-q11-c", "text": "Eliminate students who perform poorly in sports" },
+          { "id": "m8-q11-d", "text": "Print final report card diplomas" }
+        ],
+        "correctOptionId": "m8-q11-a",
+        "explanation": "Formative evaluation in science identifies conceptual errors early, allowing teachers to adapt experiments and discussions."
+      },
+      {
+        "id": "m8-q12",
+        "question": "Teaching children about waste segregation into biodegradable and non-biodegradable bins is most effective when:",
+        "options": [
+          { "id": "m8-q12-a", "text": "Students actively sort lunch scraps and classroom paper waste into dedicated school bins daily" },
+          { "id": "m8-q12-b", "text": "The teacher reads the definition from an encyclopedia once" },
+          { "id": "m8-q12-c", "text": "Students copy an essay without doing any real sorting" },
+          { "id": "m8-q12-d", "text": "Children are warned of disciplinary action" }
+        ],
+        "correctOptionId": "m8-q12-a",
+        "explanation": "Direct experiential practice instills lasting habits and reinforces ecological concepts far better than textbook memorization."
+      },
+      {
+        "id": "m8-q13",
+        "question": "Which of the following instructional resources represents a primary source for teaching local historical monuments in EVS?",
+        "options": [
+          { "id": "m8-q13-a", "text": "An editorial article written in a magazine 100 years later" },
+          { "id": "m8-q13-b", "text": "An ancient stone inscription (rock edict) or direct physical architecture of the site itself" },
+          { "id": "m8-q13-c", "text": "A fictional movie depicting the dynasty" },
+          { "id": "m8-q13-d", "text": "A student drawing of an imaginary fortress" }
+        ],
+        "correctOptionId": "m8-q13-b",
+        "explanation": "Primary sources provide first-hand, contemporaneous physical evidence, such as archaeological ruins, inscriptions, coins, and architectural structures."
+      },
+      {
+        "id": "m8-q14",
+        "question": "How can an EVS educator best dispel gender stereotypes regarding domestic roles?",
+        "options": [
+          { "id": "m8-q14-a", "text": "Display images of mothers cooking and fathers reading newspapers" },
+          { "id": "m8-q14-b", "text": "Highlight narratives where male figures cook and care for siblings while female figures work as engineers or pilots" },
+          { "id": "m8-q14-c", "text": "Instruct girls to clean the classroom while boys arrange sports equipment" },
+          { "id": "m8-q14-d", "text": "Avoid discussing household tasks altogether" }
+        ],
+        "correctOptionId": "m8-q14-b",
+        "explanation": "Presenting non-traditional role models challenges gender stereotyping and promotes egalitarian worldviews."
+      },
+      {
+        "id": "m8-q15",
+        "question": "In teaching basic physics concepts (such as floating and sinking) to primary graders, the recommended scientific method involves:",
+        "options": [
+          { "id": "m8-q15-a", "text": "Memorizing Archimedes' principle mathematically" },
+          { "id": "m8-q15-b", "text": "Hands-on water tub experimentation where students predict, test various objects, and classify observations" },
+          { "id": "m8-q15-c", "text": "Copying density formulas without handling any water" },
+          { "id": "m8-q15-d", "text": "Deducting exam marks for students who ask why items float" }
+        ],
+        "correctOptionId": "m8-q15-b",
+        "explanation": "Inquiry cycles of prediction, physical testing, and collective sense-making help primary students master basic buoyancy concepts."
+      }
+    ]
+  },
+  {
+    "id": "mock-9",
+    "title": "Sociological Foundations & Cultural Diversity in Assam",
+    "description": "Examine the sociology of education, indigenous communities, historical movements, and cultural geography of Assam.",
+    "questions": [
+      {
+        "id": "m9-q1",
+        "question": "Which ancient archaeological and monastic site in Assam is situated on the Monikut Hill?",
+        "options": [
+          { "id": "m9-q1-a", "text": "Kamakhya Temple" },
+          { "id": "m9-q1-b", "text": "Hayagriva Madhava Temple" },
+          { "id": "m9-q1-c", "text": "Umananda Temple" },
+          { "id": "m9-q1-d", "text": "Navagraha Temple" }
+        ],
+        "correctOptionId": "m9-q1-b",
+        "explanation": "The historic Hayagriva Madhava Temple is located on the Monikut Hill at Hajo in Kamrup district."
+      },
+      {
+        "id": "m9-q2",
+        "question": "Ali-Aye-Ligang, a spring festival celebrating the commencement of the Ahu paddy sowing cycle, is celebrated by which community?",
+        "options": [
+          { "id": "m9-q2-a", "text": "Mishing community" },
+          { "id": "m9-q2-b", "text": "Bodo community" },
+          { "id": "m9-q2-c", "text": "Karbi community" },
+          { "id": "m9-q2-d", "text": "Rabha community" }
+        ],
+        "correctOptionId": "m9-q2-a",
+        "explanation": "Ali-Aye-Ligang is celebrated by the Mishing tribe on the first Wednesday of the month of Ginmur Polo (Phalgun)."
+      },
+      {
+        "id": "m9-q3",
+        "question": "The historic peasant uprising against British colonial revenue exploitation that took place in 1861 in Assam is known as the:",
+        "options": [
+          { "id": "m9-q3-a", "text": "Phulaguri Dhewa" },
+          { "id": "m9-q3-b", "text": "Patharughat Uprising" },
+          { "id": "m9-q3-c", "text": "Rangia Revolt" },
+          { "id": "m9-q3-d", "text": "Lachit rebellion" }
+        ],
+        "correctOptionId": "m9-q3-a",
+        "explanation": "The Phulaguri Dhewa (1861) was Assam's earliest peasant rebellion against British tax policy and the ban on betel nut cultivation."
+      },
+      {
+        "id": "m9-q4",
+        "question": "Who was the legendary leader of the anti-British rebellion in Assam in 1828 following the Treaty of Yandaboo?",
+        "options": [
+          { "id": "m9-q4-a", "text": "Gomdhar Konwar" },
+          { "id": "m9-q4-b", "text": "Kushal Konwar" },
+          { "id": "m9-q4-c", "text": "Maniram Dewan" },
+          { "id": "m9-q4-d", "text": "Bhogeswari Phukanani" }
+        ],
+        "correctOptionId": "m9-q4-a",
+        "explanation": "Gomdhar Konwar led the earliest organized armed resistance against British occupation in Upper Assam in 1828."
+      },
+      {
+        "id": "m9-q5",
+        "question": "The Maidams of Charaideo are historical monuments associated with which ruling dynasty?",
+        "options": [
+          { "id": "m9-q5-a", "text": "Varman dynasty" },
+          { "id": "m9-q5-b", "text": "Koch dynasty" },
+          { "id": "m9-q5-c", "text": "Ahom dynasty" },
+          { "id": "m9-q5-d", "text": "Kachari dynasty" }
+        ],
+        "correctOptionId": "m9-q5-c",
+        "explanation": "Charaideo was the first capital established by Chaolung Sukaphaa; its Maidams served as the sacred royal tumuli of Ahom monarchs."
+      },
+      {
+        "id": "m9-q6",
+        "question": "The classical dance form 'Sattriya', recognized as an Indian Classical Dance by the Sangeet Natak Akademi, was founded in the 15th century by:",
+        "options": [
+          { "id": "m9-q6-a", "text": "Srimanta Sankardeva" },
+          { "id": "m9-q6-b", "text": "Madhavdeva" },
+          { "id": "m9-q6-c", "text": "Bishnu Prasad Rabha" },
+          { "id": "m9-q6-d", "text": "Rudra Singha" }
+        ],
+        "correctOptionId": "m9-q6-a",
+        "explanation": "Mahapurush Srimanta Sankardeva created Sattriya as an artistic medium for the neo-Vaishnavite movement in Assam's monastic Sattras."
+      },
+      {
+        "id": "m9-q7",
+        "question": "The river island Majuli was formed in the Brahmaputra River following catastrophic tectonic floods, notably after the earthquake of:",
+        "options": [
+          { "id": "m9-q7-a", "text": "1750" },
+          { "id": "m9-q7-b", "text": "1897" },
+          { "id": "m9-q7-c", "text": "1950" },
+          { "id": "m9-q7-d", "text": "1652" }
+        ],
+        "correctOptionId": "m9-q7-a",
+        "explanation": "Majuli took its modern island form following the diversion of the Brahmaputra and Dihing channels during major 18th-century tectonic shifts."
+      },
+      {
+        "id": "m9-q8",
+        "question": "The 'Posa' system practiced during the Ahom administration was:",
+        "options": [
+          { "id": "m9-q8-a", "text": "An annual community tax paid to neighboring frontier hill tribes to maintain peace and trade stability" },
+          { "id": "m9-q8-b", "text": "A capital punishment method" },
+          { "id": "m9-q8-c", "text": "A silk weaving technique" },
+          { "id": "m9-q8-d", "text": "An exclusive judicial trial method" }
+        ],
+        "correctOptionId": "m9-q8-a",
+        "explanation": "Posa was a frontier management policy wherein plains villages paid structured goods to hill tribes to maintain border security."
+      },
+      {
+        "id": "m9-q9",
+        "question": "Which bird sanctuary in Sivasagar district of Assam is renowned as a primary wintering habitat for migratory waterfowl?",
+        "options": [
+          { "id": "m9-q9-a", "text": "Pani Dihing Bird Sanctuary" },
+          { "id": "m9-q9-b", "text": "Deepor Beel" },
+          { "id": "m9-q9-c", "text": "Bordoibam Bilmukh" },
+          { "id": "m9-q9-d", "text": "Bornadi Sanctuary" }
+        ],
+        "correctOptionId": "m9-q9-a",
+        "explanation": "Pani Dihing Wildlife Sanctuary in Sivasagar is celebrated for hosting large populations of migratory birds."
+      },
+      {
+        "id": "m9-q10",
+        "question": "The Sixth Schedule of the Indian Constitution grants autonomous administrative governance to tribal regions through Autonomous District Councils. In Assam, this applies to:",
+        "options": [
+          { "id": "m9-q10-a", "text": "Dima Hasao, Karbi Anglong, and Bodoland Territorial Region (BTR)" },
+          { "id": "m9-q10-b", "text": "Kamrup and Nagaon exclusively" },
+          { "id": "m9-q10-c", "text": "Cachar and Karimganj valleys" },
+          { "id": "m9-q10-d", "text": "Dhubri and Goalpara" }
+        ],
+        "correctOptionId": "m9-q10-a",
+        "explanation": "The Sixth Schedule establishes Autonomous District and Regional Councils in Dima Hasao, Karbi Anglong, and the Bodoland Territorial Region."
+      },
+      {
+        "id": "m9-q11",
+        "question": "Kushan Gaan, a traditional folk theater featuring musical narrative storytelling, is associated with which community in Western Assam?",
+        "options": [
+          { "id": "m9-q11-a", "text": "Koch-Rajbongshi community" },
+          { "id": "m9-q11-b", "text": "Ahom community" },
+          { "id": "m9-q11-c", "text": "Tiwa community" },
+          { "id": "m9-q11-d", "text": "Deori community" }
+        ],
+        "correctOptionId": "m9-q11-a",
+        "explanation": "Kushan Gaan is a traditional folk performance art popular among the Koch-Rajbongshi community based on Ramayana tales."
+      },
+      {
+        "id": "m9-q12",
+        "question": "The Asomiya Bhasa Unnati Sadhini Sabha, formed in 1888, was established by Assamese scholars in:",
+        "options": [
+          { "id": "m9-q12-a", "text": "Calcutta (Kolkata)" },
+          { "id": "m9-q12-b", "text": "Guwahati" },
+          { "id": "m9-q12-c", "text": "Jorhat" },
+          { "id": "m9-q12-d", "text": "Shillong" }
+        ],
+        "correctOptionId": "m9-q12-a",
+        "explanation": "Assamese students in Calcutta founded the ABUS Sabha in 1888 to revitalize Assamese language, literature, and culture."
+      },
+      {
+        "id": "m9-q13",
+        "question": "Who was the only female martyr shot by British colonial forces in Assam during the 1942 Quit India Movement while attempting to hoist the national flag at Gohpur Police Station?",
+        "options": [
+          { "id": "m9-q13-a", "text": "Kanaklata Barua" },
+          { "id": "m9-q13-b", "text": "Bhogeswari Phukanani" },
+          { "id": "m9-q13-c", "text": "Pushpalata Das" },
+          { "id": "m9-q13-d", "text": "Tileswari Barua" }
+        ],
+        "correctOptionId": "m9-q13-a",
+        "explanation": "Fourteen-year-old Kanaklata Barua led the Mrityu Bahini procession at Gohpur police station on September 20, 1942, and was martyred."
+      },
+      {
+        "id": "m9-q14",
+        "question": "In the sociology of education, 'socialization' is defined as the process whereby:",
+        "options": [
+          { "id": "m9-q14-a", "text": "Children passively learn mechanical job skills in isolation" },
+          { "id": "m9-q14-b", "text": "Individuals acquire culture, language, norms, and social roles necessary to participate in society" },
+          { "id": "m9-q14-c", "text": "Governments enforce military rule" },
+          { "id": "m9-q14-d", "text": "Students are strictly segregated by test marks" }
+        ],
+        "correctOptionId": "m9-q14-b",
+        "explanation": "Socialization transmits cultural values, language, and behavioral conventions from one generation to the next."
+      },
+      {
+        "id": "m9-q15",
+        "question": "Which Assamese freedom fighter was hanged by the British on charges of orchestrating a train derailment near Sarupathar during the Quit India Movement in 1943?",
+        "options": [
+          { "id": "m9-q15-a", "text": "Kushal Konwar" },
+          { "id": "m9-q15-b", "text": "Piyoli Phukan" },
+          { "id": "m9-q15-c", "text": "Maniram Dewan" },
+          { "id": "m9-q15-d", "text": "Dutiram Barua" }
+        ],
+        "correctOptionId": "m9-q15-a",
+        "explanation": "Kushal Konwar, president of the Sarupathar Congress Committee, was executed in Jorhat Jail on June 15, 1943."
+      }
+    ]
+  },
+  {
+    "id": "mock-10",
+    "title": "Comprehensive Full-Length Pedagogy Simulator",
+    "description": "Challenge your pedagogical judgment across complex mixed classroom scenarios, neurodiversity cases, and assessment dilemmas.",
+    "questions": [
+      {
+        "id": "m10-q1",
+        "question": "Two students in your grade VIII class engage in persistent interpersonal squabbles that disrupt classwork. The rotational seating chart places them together next Monday. Student A requests a seat reassignment. What is the most constructive response?",
+        "options": [
+          { "id": "m10-q1-a", "text": "Dismiss the conflict as trivial and force them to sit in silence without mediation" },
+          { "id": "m10-q1-b", "text": "Mediate a private dialogue with both learners to understand their underlying concerns and guide conflict resolution before enforcing rules" },
+          { "id": "m10-q1-c", "text": "Rusticate both students for three days" },
+          { "id": "m10-q1-d", "text": "Publicly humiliate both students during morning assembly" }
+        ],
+        "correctOptionId": "m10-q1-b",
+        "explanation": "Restorative, communicative mediation resolves underlying social tensions while supporting emotional self-regulation and social development."
+      },
+      {
+        "id": "m10-q2",
+        "question": "A teacher notices that an otherwise capable secondary student consistently fails to submit physics lab assignments on time, claiming the deadlines feel impossible. What is the best course of action?",
+        "options": [
+          { "id": "m10-q2-a", "text": "Label the student a chronic defaulter and enforce negative marking automatically" },
+          { "id": "m10-q2-b", "text": "Meet with the student to assess their workflow and break complex assignments down into scaffolded, manageable milestones" },
+          { "id": "m10-q2-c", "text": "Exempt the student from ever submitting physics assignments" },
+          { "id": "m10-q2-d", "text": "Demand that parents hire a private tutor immediately" }
+        ],
+        "correctOptionId": "m10-q2-b",
+        "explanation": "Scaffolding complex workloads into bite-sized milestones addresses executive functioning bottlenecks constructively."
+      },
+      {
+        "id": "m10-q3",
+        "question": "In a diverse classroom with students from marginalized indigenous linguistic backgrounds, which policy best embodies the goals of NCF-SE 2023?",
+        "options": [
+          { "id": "m10-q3-a", "text": "Penalize any student who speaks their native tongue on school premises" },
+          { "id": "m10-q3-b", "text": "Use multilingual instruction, validate native vocabulary, and create bilingual peer learning groups" },
+          { "id": "m10-q3-c", "text": "Segregate non-standard speakers into an isolated classroom section" },
+          { "id": "m10-q3-d", "text": "Demand that students only read classical foreign literature" }
+        ],
+        "correctOptionId": "m10-q3-b",
+        "explanation": "Multilingual pedagogy treats native linguistic heritage as an instructional resource rather than a deficit."
+      },
+      {
+        "id": "m10-q4",
+        "question": "Which of the following describes the psychological phenomenon of 'Learned Helplessness' in a school environment?",
+        "options": [
+          { "id": "m10-q4-a", "text": "A student works relentlessly to attain top competitive exam ranks" },
+          { "id": "m10-q4-b", "text": "A student attributes repeated academic failure to unchangeable personal shortcomings and stops trying altogether" },
+          { "id": "m10-q4-c", "text": "A learner seeks constant assistance to manipulate the instructor" },
+          { "id": "m10-q4-d", "text": "A child excels at practical motor tasks while struggling with reading" }
+        ],
+        "correctOptionId": "m10-q4-b",
+        "explanation": "Learned helplessness (Seligman) occurs when past failures lead a student to believe they have no control over their academic outcomes."
+      },
+      {
+        "id": "m10-q5",
+        "question": "A teacher wants to foster a growth mindset (Carol Dweck) in mathematics. Which phrasing should they use when providing feedback?",
+        "options": [
+          { "id": "m10-q5-a", "text": "\"You are a born mathematical genius!\"" },
+          { "id": "m10-q5-b", "text": "\"I can see the persistence and multiple strategies you applied to crack this tough problem.\"" },
+          { "id": "m10-q5-c", "text": "\"Don't worry, math simply isn't for everyone.\"" },
+          { "id": "m10-q5-d", "text": "\"You scored 100%, so you don't need to practice anymore.\"" }
+        ],
+        "correctOptionId": "m10-q5-b",
+        "explanation": "Praising effort, persistence, and problem-solving strategies reinforces the belief that intelligence and capability are malleable."
+      },
+      {
+        "id": "m10-q6",
+        "question": "During group work, a student with mild cerebral palsy experiences motor fatigue and struggles to write at the speed of peers. The teacher should:",
+        "options": [
+          { "id": "m10-q6-a", "text": "Disallow the student from participating in group discussions" },
+          { "id": "m10-q6-b", "text": "Assign the student an oral presenter or concept organizer role and provide adaptive writing tools" },
+          { "id": "m10-q6-c", "text": "Deduct marks whenever group papers are turned in late" },
+          { "id": "m10-q6-d", "text": "Demand that the student double their physical writing speed" }
+        ],
+        "correctOptionId": "m10-q6-b",
+        "explanation": "Inclusive differentiation balances motor demands through specialized roles and assistive technologies."
+      },
+      {
+        "id": "m10-q7",
+        "question": "Which of the following is an example of an extrinsic motivator that may inadvertently dampen a child's intrinsic curiosity if overused?",
+        "options": [
+          { "id": "m10-q7-a", "text": "The personal thrill of cracking a difficult math puzzle" },
+          { "id": "m10-q7-b", "text": "Offering cash rewards or toffees for every book read (overjustification effect)" },
+          { "id": "m10-q7-c", "text": "Fascinated interest in dinosaur fossils" },
+          { "id": "m10-q7-d", "text": "Desire to compose a song for personal joy" }
+        ],
+        "correctOptionId": "m10-q7-b",
+        "explanation": "The overjustification effect occurs when external material rewards displace existing intrinsic motivation."
+      },
+      {
+        "id": "m10-q8",
+        "question": "In Howard Gardner's Theory of Multiple Intelligences, a student who shows exceptional sensitivity to plants, ecological systems, and wildlife possesses high:",
+        "options": [
+          { "id": "m10-q8-a", "text": "Naturalistic intelligence" },
+          { "id": "m10-q8-b", "text": "Spatial intelligence" },
+          { "id": "m10-q8-c", "text": "Bodily-kinesthetic intelligence" },
+          { "id": "m10-q8-d", "text": "Intrapersonal intelligence" }
+        ],
+        "correctOptionId": "m10-q8-a",
+        "explanation": "Naturalistic intelligence is the ability to recognize, categorize, and draw on features of the natural environment."
+      },
+      {
+        "id": "m10-q9",
+        "question": "What is the primary characteristic of an 'authoritative' classroom management style (Diana Baumrind model applied to teaching)?",
+        "options": [
+          { "id": "m10-q9-a", "text": "High expectations combined with high warmth, open dialogue, and reasoned boundaries" },
+          { "id": "m10-q9-b", "text": "Arbitrary punishment, harsh silence, and zero tolerance for student questions" },
+          { "id": "m10-q9-c", "text": "Complete absence of rules, boundaries, or curricular discipline" },
+          { "id": "m10-q9-d", "text": "Indifference to student safety and academic outcomes" }
+        ],
+        "correctOptionId": "m10-q9-a",
+        "explanation": "Authoritative management combines clear expectations and discipline with mutual respect and emotional support."
+      },
+      {
+        "id": "m10-q10",
+        "question": "A middle-school student refuses to use a school lunch bag because peers teased them that it looks 'childish'. This behavioral decision is driven by:",
+        "options": [
+          { "id": "m10-q10-a", "text": "High need for peer acceptance and fear of social ostracization" },
+          { "id": "m10-q10-b", "text": "Sensory-motor decay" },
+          { "id": "m10-q10-c", "text": "Visual processing blindness" },
+          { "id": "m10-q10-d", "text": "Intrinsic self-actualization" }
+        ],
+        "correctOptionId": "m10-q10-a",
+        "explanation": "Adolescents are sensitive to peer approval, and conformity pressures strongly influence their daily behaviors."
+      },
+      {
+        "id": "m10-q11",
+        "question": "When a classroom teacher maintains a reflective teaching journal, what are they practicing?",
+        "options": [
+          { "id": "m10-q11-a", "text": "Action research and professional metacognition" },
+          { "id": "m10-q11-b", "text": "Administrative record duplication" },
+          { "id": "m10-q11-c", "text": "Rote behavioral drill" },
+          { "id": "m10-q11-d", "text": "Preparing for summative salary audits" }
+        ],
+        "correctOptionId": "m10-q11-a",
+        "explanation": "Reflective journaling encourages teachers to evaluate lesson efficacy and adapt their instructional practices."
+      },
+      {
+        "id": "m10-q12",
+        "question": "Under the POCSO Act (Protection of Children from Sexual Offences), 2012, mandatory reporting legally requires teachers to:",
+        "options": [
+          { "id": "m10-q12-a", "text": "Report any apprehension or knowledge of child sexual abuse immediately to the Special Juvenile Police Unit or local police" },
+          { "id": "m10-q12-b", "text": "Wait until term end before conducting private inquiries" },
+          { "id": "m10-q12-c", "text": "Ignore student statements to protect school reputation" },
+          { "id": "m10-q12-d", "text": "Demand monetary compensation from the accused" }
+        ],
+        "correctOptionId": "m10-q12-a",
+        "explanation": "Section 19 of the POCSO Act makes reporting suspected child sexual offenses to law enforcement a mandatory duty."
+      },
+      {
+        "id": "m10-q13",
+        "question": "Which of the following teaching methods best supports students in synthesizing opposing perspectives on controversial historical events?",
+        "options": [
+          { "id": "m10-q13-a", "text": "Structured classroom debate followed by a collaborative synthesis essay" },
+          { "id": "m10-q13-b", "text": "Demanding students memorize one official interpretation" },
+          { "id": "m10-q13-c", "text": "Skipping controversial history topics altogether" },
+          { "id": "m10-q13-d", "text": "Deducting test marks for questioning historical records" }
+        ],
+        "correctOptionId": "m10-q13-a",
+        "explanation": "Deliberative debates and synthesis exercises build perspective-taking and critical analytical skills."
+      },
+      {
+        "id": "m10-q14",
+        "question": "A teacher notices that an entire class consistently scores poorly on test items assessing fractional ratios, despite passing straightforward fraction addition questions. The teacher should:",
+        "options": [
+          { "id": "m10-q14-a", "text": "Conclude that the students are incapable of learning mathematics" },
+          { "id": "m10-q14-b", "text": "Conduct a diagnostic lesson to uncover underlying conceptual misunderstandings of ratios as relative comparisons" },
+          { "id": "m10-q14-c", "text": "Simply delete all ratio questions from upcoming tests" },
+          { "id": "m10-q14-d", "text": "Blame primary school educators for poor preparation" }
+        ],
+        "correctOptionId": "m10-q14-b",
+        "explanation": "Assessment data should inform targeted diagnostic interventions that address specific conceptual hurdles."
+      },
+      {
+        "id": "m10-q15",
+        "question": "What is the ultimate purpose of education according to the holistic vision of NEP 2020?",
+        "options": [
+          { "id": "m10-q15-a", "text": "Producing mechanical clerical labor for corporations" },
+          { "id": "m10-q15-b", "text": "Developing good human beings capable of rational thought, compassion, courage, resilience, and creative inquiry" },
+          { "id": "m10-q15-c", "text": "Training students purely for rote memory recall" },
+          { "id": "m10-q15-d", "text": "Eliminating all extracurricular and arts subjects" }
+        ],
+        "correctOptionId": "m10-q15-b",
+        "explanation": "NEP 2020 envisions an education system that builds character, ethical grounding, and creative intellectual capabilities."
+      }
+    ]
+  }
+]
